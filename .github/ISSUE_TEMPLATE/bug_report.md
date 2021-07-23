@@ -1,10 +1,15 @@
 ---
-name: Bug report
+name: :beetle: Bug report
 about: Create a report to help us improve
-title: ''
-labels: ''
-assignees: ''
+title: 'Title of the bug'
+labels: 'Bug, Unplanned'
+assignees: '@wulfland'
 
+---
+
+---
+name: 🐞 Bug report
+about: Create a report about something that is not working
 ---
 
 **Describe the bug**
