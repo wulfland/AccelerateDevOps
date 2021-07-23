@@ -1,5 +1,5 @@
 name: 💡 Custom Issue Form
-description: File a bug report
+description: A custom form with different fields
 body:
   - type: markdown
     attributes:
