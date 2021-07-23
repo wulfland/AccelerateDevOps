@@ -1,10 +1,6 @@
 name: 💡 Custom Issue Form
 description: A custom form with different fields
 body:
-  - type: markdown
-    attributes:
-      value: |
-        Thanks for taking the time to fill out this bug report!
   - type: input
     id: contact
     attributes:
@@ -19,7 +15,7 @@ body:
       label: What happened?
       description: Also tell us, what did you expect to happen?
       placeholder: Tell us what you see!
-      value: "A bug happened!"
+      value: "Tell us what you think"
     validations:
       required: true
   - type: dropdown
