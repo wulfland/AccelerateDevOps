@@ -1,8 +1,8 @@
 ---
 name: 🐞 Bug report
 about: Create a report to help us improve
-title: 'Title of the bug'
-labels: [Bug, Unplanned]
+title: '[Bug]:'
+labels: [bug, unplanned]
 assignees: 
   - wulfland
 ---
