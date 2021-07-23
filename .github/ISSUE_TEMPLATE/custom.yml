@@ -1,9 +1,5 @@
 name: 💡 Custom Issue Form
 description: File a bug report
-title: "💡"
-labels: [enhancement]
-assignees:
-  - wulfland
 body:
   - type: markdown
     attributes:
