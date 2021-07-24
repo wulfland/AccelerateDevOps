@@ -1,3 +1,3 @@
 # AccelerateDevOps
 
-Smart commits
+Jira Smart commits
