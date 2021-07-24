@@ -1,3 +1,3 @@
 # AccelerateDevOps
 
-# Add Jira integration
+Smart commits
