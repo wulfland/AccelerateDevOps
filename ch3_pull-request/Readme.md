@@ -18,8 +18,7 @@ In Chapter 3 - _Teamwork and Collaborative Development_ we learn how to collabo
 
 5. Commit your changes into a new _branch_:
 
-   ![Commit Changes](commit)
+   ![Commit Changes](img/commit.png?raw=true)
 
 6. Create a pull request
 
-   [commit]: ch3_pull-request/img/commit.png
