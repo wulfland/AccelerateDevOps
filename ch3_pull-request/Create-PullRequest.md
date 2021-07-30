@@ -26,6 +26,18 @@ In Chapter 3 - _Teamwork and Collaborative Development_ we learn how to collabo
 
    Make sure that the pull request uses base:main and not the upstream repository. This should be correct by default.
 
-7. Got to `Files changed`and note the changes (deleted lines red, added lines green). Add a comment to a line by clicking the `+`at the beginning of the line when hovering with the mouse over it.
+7. Got to `Files changed` and note the changes (deleted lines red, added lines green). Add a comment to a line by clicking the `+`at the beginning of the line when hovering with the mouse over it. Add a comment to line nine and click `Add single comment`.
 
    ![Comment on changes](img/comment.png)
+
+8. Edit the file opening the menu in the top right corner and selecting `Edit file`.
+
+   ![Edit file](img/edit-file.png)
+
+   Add a new line of text to line 9 and commit directly to the branch you created earlier.
+
+   ![Commit to branch](img/commit-to-branch.png)
+
+   Navigate back to the pull request and note that you can review the file with all changes (`Files changed`) or individual `Commits`. You can comment in both views.
+
+   ![Changes](img/changes.png)
