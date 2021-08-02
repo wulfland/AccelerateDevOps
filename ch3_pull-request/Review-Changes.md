@@ -2,6 +2,8 @@
 
 This is the hands-on part in chapter 3 for reviewing changes - especially making suggestions.
 
+## Making suggesations
+
 1. Copy the following code to your clipboard by clicking the icon in the top right corner.
 
     ```javascript
@@ -25,11 +27,13 @@ This is the hands-on part in chapter 3 for reviewing changes - especially making
 
 4. Commit directly to the branch you created in [Create-PullRequest.md](Create-PullRequest.md)
 
-5. Navigate back to the pull request and look for src/app.js under `Files changed`. Marl lines 6 to 9 and create a multi-line comment. Click the suggestion button and you'll see that the code is in the suggestion block including whitespaces.
+5. Navigate back to the pull request and look for src/app.js under `Files changed`. Mark lines 6 to 9 and create a multi-line comment. Click the suggestion button and you'll see that the code is in the suggestion block including whitespaces.
 
     ![make-suggestion](img/make-suggestion.png)
 
 6. Add 4 blanks to the beginning of every line to fix the indent issue with the nested while loop. Click `Add single comment`.
+
+## Incorporating feedback in your pull request
 
 7. You can commit the suggestion directly to your branch, or you can batch multiple suggestions to one commit and the commit all the changes at once.
 
