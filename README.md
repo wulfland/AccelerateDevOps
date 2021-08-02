@@ -9,3 +9,4 @@
 ### Chapter 3
 
 [Create a pull request](ch3_pull-request/Create-PullRequest.md)
+[Review Changes](ch3_pull-request/Review-Changes.md)
