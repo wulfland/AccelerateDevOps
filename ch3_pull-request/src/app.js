@@ -3,10 +3,10 @@ function toRomanNumerals(num) {
     var roman = '';
     var i;
     for ( i in lookup ) {
-    while ( num >= lookup[i] ) {
-        roman += i;
-        num -= lookup[i];
-    }
+        while ( num >= lookup[i] ) {
+            roman += i;
+            num -= lookup[i];
+        }
     }
     return roman;
 
