@@ -11,6 +11,7 @@ In Chapter 3 - _Teamwork and Collaborative Development_ we learn how to collabo
 
    Add random text
    a new line
+   Add another line
 
 4. Modify the following line by removing the letters that do not belong:
 
