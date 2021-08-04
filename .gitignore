@@ -7,3 +7,6 @@
 !.vscode/launch.json
 !.vscode/extensions.json
 *.code-workspace
+
+# Ignore Thumbs.db
+Thumbs.db
