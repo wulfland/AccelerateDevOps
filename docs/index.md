@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "Accelerate DevOps with GitHub"
 ---
 
@@ -16,6 +16,7 @@ Text can be **bold**, _italic_ or ~~strikethrough~~.
 ### Sourcecode
 
 _Javascript:_
+
 ```js
 function writeHelloWorld(user) {
   console.log(`Hello World and ${user}!`);
@@ -23,6 +24,7 @@ function writeHelloWorld(user) {
 ```
 
 _Ruby:_
+
 ```ruby
 puts "Hello World!"
 ```
