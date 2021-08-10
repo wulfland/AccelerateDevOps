@@ -1,7 +1,6 @@
 ---
 layout: page
 title: "Accelerate DevOps with GitHub"
-permalink: /index/
 ---
 
 # Welcome to Accelerate DevOps with GitHub
