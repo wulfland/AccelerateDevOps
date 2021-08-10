@@ -1,5 +1,7 @@
 ---
-layout: default
+layout: page
+title: "Start"
+permalink: /index/
 ---
 
 # Welcome to Accelerate DevOps with GitHub
