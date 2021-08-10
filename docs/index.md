@@ -12,18 +12,16 @@ In this repository you can find all examples for my book.
 
 Text can be **bold**, _italic_ or ~~strikethrough~~.
 
-### Emoticons
-
-Emoticons? :shipit: :+1:
-
 ### Sourcecode
 
+_Javascript:_
 ```js
 function writeHelloWorld(user) {
   console.log(`Hello World and ${user}!`);
 }
 ```
 
+_Ruby:_
 ```ruby
 puts "Hello World!"
 ```
