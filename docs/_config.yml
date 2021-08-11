@@ -1,4 +1,10 @@
-theme: jekyll-theme-cayman
+title: Accelerate DevOps with GitHub
+description: >-
+  This is is a sample Jekyll website that is hosted in GitHub Pages.
+  It demonstrates how to create nice content using markdown. 
+twitter_username: mike_kaufmann
+github_username: wulfland
+theme: minima
 markdown: kramdown
 plugins:
   - jekyll-feed
