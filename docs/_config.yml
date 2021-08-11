@@ -4,7 +4,7 @@ description: >-
   It demonstrates how to create nice content using markdown. 
 twitter_username: mike_kaufmann
 github_username: wulfland
-theme: minima
+theme: jekyll-theme-minimal
 markdown: kramdown
 plugins:
   - jekyll-feed
