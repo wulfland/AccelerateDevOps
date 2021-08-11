@@ -1,8 +1,8 @@
 ---
 layout: page
-title: "My Page"
+title: "Another Page"
 ---
 
-# My Page
+# Another Page
 
 A custom page

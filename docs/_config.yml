@@ -8,3 +8,4 @@ theme: minima
 markdown: kramdown
 plugins:
   - jekyll-feed
+show_excerpts: true
