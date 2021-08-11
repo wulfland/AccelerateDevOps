@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: home
 title: "Accelerate DevOps with GitHub"
 ---
 
