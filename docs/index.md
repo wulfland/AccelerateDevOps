@@ -1,6 +1,5 @@
 ---
 layout: home
-title: "Accelerate DevOps with GitHub"
 ---
 
 # Welcome to Accelerate DevOps with GitHub
@@ -18,15 +17,21 @@ Text can be **bold**, _italic_ or ~~strikethrough~~.
 _Javascript:_
 
 ```js
-function writeHelloWorld(user) {
-  console.log(`Hello World and ${user}!`);
+function writeHelloWorld(name) {
+  console.log(`Hello World and ${name}!`);
 }
+writeHelloWorld('Jon Doe');
+//=> prints 'Hello World and Jon Doe!' to STDOUT.
 ```
 
 _Ruby:_
 
 ```ruby
-puts "Hello World!"
+def print_helloWorld(name)
+  puts "Hello World and #{name}!"
+end
+print_helloWorld('Jon Doe')
+#=> prints 'Hello World and Jon Doe!' to STDOUT.
 ```
 
 ### Lists
