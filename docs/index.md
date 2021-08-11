@@ -14,14 +14,14 @@ Text can be **bold**, _italic_ or ~~strikethrough~~.
 
 ### Sourcecode
 
-_Javascript:_
+_JavaScript:_
 
 ```js
 function writeHelloWorld(name) {
   console.log(`Hello World and ${name}!`);
 }
 writeHelloWorld('Jon Doe');
-//=> prints 'Hello World and Jon Doe!' to STDOUT.
+// writes 'Hello World and Jon Doe!' to STDOUT.
 ```
 
 _Ruby:_
@@ -32,6 +32,17 @@ def print_helloWorld(name)
 end
 print_helloWorld('Jon Doe')
 #=> prints 'Hello World and Jon Doe!' to STDOUT.
+```
+
+_C#:_
+
+```csharp
+void WriteHelloWorld(string name)
+{
+  Console.WriteLine("Hello World and {0}!", name);
+}
+WriteHelloWorld("John Doe");
+// writes 'Hello World and Johnm Doe' to STDOUT
 ```
 
 ### Lists
