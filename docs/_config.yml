@@ -9,3 +9,7 @@ markdown: kramdown
 plugins:
   - jekyll-feed
 show_excerpts: true
+header_pages:
+- get-started.md
+- about-markdown.md
+- About.md

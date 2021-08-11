@@ -4,68 +4,77 @@ title: "Get started"
 permalink: /get-started/
 ---
 
-# Welcome to Accelerate DevOps with GitHub
+HitHub Pages supports `Jekyll` as the renderer. You can use it to write content in markdown. 
 
-In this repository you can find all examples for my book.
+### Configuration
 
-## Full markdown support
+For this page I use the following `_config.yml`:
 
-### Text formatting
-
-Text can be **bold**, _italic_ or ~~strikethrough~~.
-
-### Sourcecode
-
-_JavaScript:_
-
-```js
-function writeHelloWorld(name) {
-  console.log(`Hello World and ${name}!`);
-}
-writeHelloWorld('Jon Doe');
-// writes 'Hello World and Jon Doe!' to STDOUT.
+````yaml
+title: Accelerate DevOps with GitHub
+description: >-
+  This is is a sample Jekyll website that is hosted in GitHub Pages.
+  It demonstrates how to create nice content using markdown. 
+twitter_username: mike_kaufmann
+github_username: wulfland
+theme: minima
+markdown: kramdown
+plugins:
+  - jekyll-feed
+show_excerpts: true
+header_pages:
+- get-started.md
+- about-markdown.md
+- About.md
 ```
 
-_Ruby:_
+### The homepage
 
-```ruby
-def print_helloWorld(name)
-  puts "Hello World and #{name}!"
-end
-print_helloWorld('Jon Doe')
-#=> prints 'Hello World and Jon Doe!' to STDOUT.
+Add a file index.md to your pages folder and add the following header:
+
+```markdown
+---
+layout: home
+---
 ```
 
-_C#:_
+This will serve as the homepage and hosts your blog posts and pages. 
 
-```csharp
-void WriteHelloWorld(string name)
-{
-  Console.WriteLine("Hello World and {0}!", name);
-}
-WriteHelloWorld("John Doe");
-// writes 'Hello World and Johnm Doe' to STDOUT
+### Pages
+
+A page is a markdown file in the root of your pages folder. It has a header like this:
+
+```markdown
+---
+layout: page
+title: About
+permalink: /about/
+---
 ```
 
-### Lists
+If you want to sort the pages you can do this in the config file.
 
-* item 1
-* item 2
-* item 3
+### Posts
 
-1. item 1
-2. item 2
-3. item 3
+Posts must be in the folder `_posts`and must have a special file format. The format is the following:
 
-### Blockquote
+```text
+YYY-MM-DD-NAME-OF-POST.md
+```
 
-> This is a blockquote
->
-> It can span multiple lines
+`YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers. The file can have the `.md` or `.markdown` extension.
 
-### Tables
+Add a header with the following values to the file:
 
-| Head   | Head 2 | Number |
-|:-------|:-------|-------:|
-|item1   | text   |    10.5|
-|item2   | text   |     5.5|
+```markdown
+---
+layout: post
+title:  "Posting in Jekyll"
+date:   2021-08-13 17:30:00 -0200
+categories: GitHub Jekyll Markdown
+permalink: /2021-08-13_posting-in-jekyll/
+published: true
+---
+```
+
+That's it. Now you just have to push your changes to GitHub to update your website.
