@@ -1,7 +1,4 @@
-theme: jekyll-theme-minimal
+theme: minima
 markdown: kramdown
 plugins:
-  - jekyll-relative-links
-relative_links:
-  enabled: true
-  collections: true
+  - jekyll-feed
