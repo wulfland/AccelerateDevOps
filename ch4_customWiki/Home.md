@@ -12,14 +12,14 @@
 <details>
     <summary>Table of Content</summary>
 
-    * [Header 1](#Header-1)  
-        * [Head 1.1](#head-1.1)  
-        * [Head 1.2](#head-1.2)  
-            * [Head 1.2.1](#head-1.2.1)
-            * [Head 1.2.2](#head-1.2.2)
-        * [Head 1.3](#head-1.3)  
-            * [Head 1.3.1](#head-1.3.1)
-            * [Head 1.3.2](#head-1.3.2)
+* [Header 1](#Header-1)  
+    * [Head 1.1](#head-1.1)  
+    * [Head 1.2](#head-1.2)  
+        * [Head 1.2.1](#head-1.2.1)
+        * [Head 1.2.2](#head-1.2.2)
+    * [Head 1.3](#head-1.3)  
+        * [Head 1.3.1](#head-1.3.1)
+        * [Head 1.3.2](#head-1.3.2)
 
 </details>
 
