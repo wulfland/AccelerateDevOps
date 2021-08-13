@@ -1,11 +1,11 @@
 <details>
     <summary>Menu</summary>
 
-    * [Home](#Header-1)  
-    * [Page1](Page1.md)  
-        * [Page 1.1](Page1-1.md)
-        * [Page 1.2](Page1-2.md)
-    * [Page2](Page2.md)
+* [Home](#Header-1)  
+* [Page1](Page1.md)  
+    * [Page 1.1](Page1-1.md)
+    * [Page 1.2](Page1-2.md)
+* [Page2](Page2.md)
 
 </details>
 
