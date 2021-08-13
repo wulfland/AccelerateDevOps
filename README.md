@@ -10,3 +10,7 @@
 
 1. [Create a pull request](ch3_pull-request/Create-PullRequest.md)
 2. [Review Changes](ch3_pull-request/Review-Changes.md)
+
+### Chapter 4
+
+[Custom Wiki Homepage](ch4_customWiki/Home.md)
