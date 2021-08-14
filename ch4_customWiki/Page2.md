@@ -1,21 +1,4 @@
-<details>
-    <summary>Menu</summary>
-
-* [Home](#Header-1)  
-* [Page1](Page1.md)  
-  * [Page 1.1](Page1-1.md)
-  * [Page 1.2](Page1-2.md)
-* [Page2](Page2.md)
-
-</details>
-
-<details>
-    <summary>Table of Content</summary>
-
-* [Header 1](#Header-1)  
-  * [Head 1.1](#head-11)  
-
-</details>
+[Home](Home.md) - Page2
 
 ***
 

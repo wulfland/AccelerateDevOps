@@ -1,5 +1,5 @@
 <details>
-    <summary>Menu</summary>
+    <summary>Global Menu</summary>
 
 * [Home](#Header-1)  
 * [Page1](Page1.md)  
@@ -9,8 +9,9 @@
 
 </details>
 
-<details>
-    <summary>Table of Content</summary>
+***
+
+If you need a custom ToC in addition to the auto-generated ToC by GitHub, you can use links to your headings. Replace spaces with a dash `-`and remove dots `.` like this:
 
 * [Header 1](#Header-1)  
   * [Head 1.1](#head-11)  
@@ -20,8 +21,6 @@
   * [Head 1.3](#head-13)  
     * [Head 1.3.1](#head-131)
     * [Head 1.3.2](#head-132)
-
-</details>
 
 ***
 
