@@ -39,7 +39,7 @@ jobs:
   Deploy:
     runs-on: ubuntu-latest
     environment: prod
-    neds: Build
+    needs: Build
     
     steps:
     - name: 'Checkout Github Action'
