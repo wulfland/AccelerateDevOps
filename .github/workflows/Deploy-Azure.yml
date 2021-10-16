@@ -56,3 +56,13 @@ jobs:
         slot-name: Production
         publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE }}
         package: website
+
+    - name: Run a smoke test on the staging slot before swapping
+      run: |
+        url=https://xyz-demo-shop.azurewebsites.net/
+        status=`curl --silent --head $url | head -1 | cut -f 2 -d' '`
+        if [ "$status" != "200" ]
+        then
+            echo "Wrong HTTP Status. Expected: '200' - Actual: '$status'"
+            exit 1
+        fi

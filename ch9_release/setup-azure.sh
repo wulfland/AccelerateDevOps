@@ -24,12 +24,6 @@ az webapp create \
     --resource-group $rgname \
     --runtime "DOTNET|5.0"
 
-# Create a second deployment slot
-az webapp deployment slot create \
-    --name $appName \
-    --resource-group $rgname \
-    --slot Staging
-
 echo "Deployment completed."
 echo "Create a secret 'AZUREAPPSERVICE_PUBLISHPROFILE' in your repository with the following content:"
 
