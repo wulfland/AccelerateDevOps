@@ -1,0 +1,25 @@
+name: Staged Deployment
+
+on:
+  workflow_dispatch:
+
+jobs:
+  Staging:
+    runs-on: ubuntu-latest
+    environment: 
+      name: pre-prod
+      url: https://pre.writeabout.net
+    steps:
+    - name: Deploy app
+      run: echo "Deploying..."
+
+  Production:
+    runs-on: ubuntu-latest
+    environment: 
+      name: prod
+      url: https://writeabout.net
+    needs: Staging
+    steps:
+    - name: Deploy app
+      run: echo "Deploying..."
+    
