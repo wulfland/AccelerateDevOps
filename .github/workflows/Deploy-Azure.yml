@@ -2,6 +2,9 @@ name: Deploy-Azure
 
 on: [workflow_dispatch]
 
+env:
+  appName: xyz-demo-shop
+
 jobs:
   Build:
     runs-on: ubuntu-latest
@@ -52,14 +55,14 @@ jobs:
     - name: Run Azure webapp deploy action using publish profile credentials
       uses: azure/webapps-deploy@v2
       with:
-        app-name: bigpicture
+        app-name: ${{ env.appName }}
         slot-name: Production
         publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE }}
         package: website
 
     - name: Run a smoke test on the staging slot before swapping
       run: |
-        url=https://xyz-demo-shop.azurewebsites.net/
+        url=https://${{ env.appName }}.azurewebsites.net/
         status=`curl --silent --head $url | head -1 | cut -f 2 -d' '`
         if [ "$status" != "200" ]
         then
