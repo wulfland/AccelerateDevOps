@@ -51,10 +51,7 @@ jobs:
     - uses: actions/download-artifact@v2
       with:
         name: website
-
-    - run: |
-        ls
-        ls -l website
+        path: website
     
     - name: Run Azure webapp deploy action using publish profile credentials
       uses: azure/webapps-deploy@v2
@@ -62,7 +59,7 @@ jobs:
         app-name: ${{ env.appName }}
         slot-name: Production
         publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE }}
-        package: website/
+        package: website
 
     - name: Run a smoke test on the staging slot before swapping
       run: |
