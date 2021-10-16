@@ -12,6 +12,7 @@ jobs:
       
   Test:
     runs-on: ubuntu-latest
+    environment: Test
     needs: Build
     steps:
     - name: Test app
@@ -19,10 +20,13 @@ jobs:
       
   Load-Test:
     runs-on: ubuntu-latest
+    environment: Load-Test
     needs: Build
     steps:
     - name: Test app
-      run: echo "Testing..."  
+      run: |
+        echo "Testing..." 
+        sleep 15
       
   Staging:
     runs-on: ubuntu-latest
