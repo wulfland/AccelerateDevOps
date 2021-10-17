@@ -5,8 +5,8 @@ on: [workflow_dispatch]
 env:
   AWS_REGION: us-east-2
   ECR_REPOSITORY: xyz-demo-shop
-  ECS_SERVICE: nginx-service
-  ECS_CLUSTER: default
+  ECS_SERVICE: xyz-demo-shop-service
+  ECS_CLUSTER: default2
   ECS_TASK_DEFINITION: ch9_release/aws-task-definition.json
   CONTAINER_NAME: tbd
 
@@ -44,7 +44,7 @@ jobs:
 
       - name: Fill in the new image ID in the Amazon ECS task definition
         id: task-def
-        uses: aws-actions/amazon-ecs-render-task-definition@v1.2.0
+        uses: aws-actions/amazon-ecs-render-task-definition@v1
         with:
           task-definition: ${{ env.ECS_TASK_DEFINITION }}
           container-name: ${{ env.CONTAINER_NAME }}

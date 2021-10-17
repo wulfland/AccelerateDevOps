@@ -2,11 +2,11 @@
     "family": "",
     "taskRoleArn": "",
     "executionRoleArn": "",
-    "networkMode": "none",
+    "networkMode": "bridge",
     "containerDefinitions": [
         {
-            "name": "",
-            "image": "",
+            "name": "xyz-demo-shop",
+            "image": "xyz-demo-shop.dkr.ecr.us-east-2.amazonaws.com/xyz-demo-shop:a1249c9e0e5389056c90ab278bdbf6d49b9a23fb",
             "repositoryCredentials": {
                 "credentialsParameter": ""
             },
@@ -18,9 +18,9 @@
             ],
             "portMappings": [
                 {
-                    "containerPort": 0,
-                    "hostPort": 0,
-                    "protocol": "udp"
+                    "containerPort": 80,
+                    "hostPort": 80,
+                    "protocol": "tcp"
                 }
             ],
             "essential": true,
