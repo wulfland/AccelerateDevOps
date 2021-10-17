@@ -1,4 +1,4 @@
-name: Deploy-Azure
+name: Deploy-AWS
 
 on: [workflow_dispatch]
 
