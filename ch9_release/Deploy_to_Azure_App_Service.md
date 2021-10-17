@@ -36,13 +36,13 @@ In this hands-on lab you will deploy a simple website to Azure App Services usin
 
    Verify that your app is running by opening the URL [https://xyz-demo-shop.azurewebsites.net](https://xyz-demo-shop.azurewebsites.net) (replace `xyz-demo-shop` with the `appName` you set in your script.)
 
-   ![09_001_Validate-setup.png](09_001_Validate-setup.png)
-
+   <img width="1103" alt="09_001_Validate-setup" src="https://user-images.githubusercontent.com/5276337/137623549-ecc96732-7861-4f3f-8539-8339571f2a3f.png">
+   
 7. __Create a [new Environment](/../../settings/environments/new)__ under `Settings` | `Environments` | `New environment`. Enter the name `Prod` and click `Configure environment`.
 
 8. Add yourself as a __required reviewer__ and click `Save protection rule`:
 
-    ![09_02_Create-environment.png](09_02_Create-environment.png)
+    <img width="527" alt="09_02_Create-environment" src="https://user-images.githubusercontent.com/5276337/137623572-996103b6-1e84-41f4-9082-b2fc050e9abd.png">
 
 9. Under `Environment secrets`, __add a new secret__ called `AZUREAPPSERVICE_PUBLISHPROFILE`. Paste the value from step 6 or run the following command to get the publishing profile again:  
 
@@ -64,23 +64,23 @@ In this hands-on lab you will deploy a simple website to Azure App Services usin
 
 11. __Run the workflow__: Go to `Actions` and select `Deploy-Azure`. Open the `Run workflow` menu and click `Run workflow`:
 
-    ![09_003_Run-workflow.png](09_003_Run-workflow.png)
+    <img width="1198" alt="09_003_Run-workflow" src="https://user-images.githubusercontent.com/5276337/137623585-c7abc6c6-36c4-4231-9bd1-a8a71a713187.png">
 
 12. __Approve__: The workflow runs some time to build the app. You'll get notified if the build job completes and the approval is required. Click `Review deployments`:
 
-    ![09_004_Approve-workflow.png](09_004_Approve-workflow.png)
+    <img width="1217" alt="09_004_Approve-workflow" src="https://user-images.githubusercontent.com/5276337/137623602-c8d6d5f2-3db8-428a-a368-c2a9bfa4c42e.png">
 
     Select the `Prod` environment and select `Approve and deploy`:
 
-    ![09_005_Approve.png](09_005_Approve.png)
+    <img width="589" alt="09_005_Approve" src="https://user-images.githubusercontent.com/5276337/137623622-2d7c6956-f960-407a-91c5-98eb679b2e12.png">
 
 13. __Validate__: Wait until the deployment is complete.
 
-    ![09_006_Progress.png](09_006_Progress.png)
+    <img width="588" alt="09_006_Progress" src="https://user-images.githubusercontent.com/5276337/137623628-bd9dd029-cc59-4729-ad25-3b9efa4d647d.png">
 
     Refresh your browser with URL [https://xyz-demo-shop.azurewebsites.net](https://xyz-demo-shop.azurewebsites.net) (replace `xyz-demo-shop` with the `appName` you set in your script.) or open a new browser to validate your deployment.
 
-    ![09_007_Validate.png](09_007_Validate.png)
+    <img width="962" alt="09_007_Validate" src="https://user-images.githubusercontent.com/5276337/137623638-60243284-fa97-4764-8ebb-a0b8032ba304.png">
 
 14. __Clean up__: If you are done you can clean up all Azure resource to save money. Delete the resource group by executing the following script from the cloud shell:
 
