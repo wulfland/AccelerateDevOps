@@ -32,3 +32,9 @@ Also see the sample pages for a ToC in [AsciiDoc](https://github.com/wulfland/Ac
 #### Custom Wiki
 
 A sample for navigation and ToC in a custom wiki can be found [here](ch4_customWiki/Home.md).
+
+## Chapter 9
+
+Hands-on execices ✋
+
+1. [Deploy to Azure App Service](ch9_release/Deploy_to_Azure_App_Service.md)
