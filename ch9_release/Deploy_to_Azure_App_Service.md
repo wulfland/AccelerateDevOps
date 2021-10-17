@@ -38,7 +38,7 @@ In this hands-on lab you will deploy a simple website to Azure App Services usin
 
    ![09_001_Validate-setup.png](09_001_Validate-setup.png)
 
-7. __Create a [new Environment](settings/environments/new)__ under `Settings` | `Environments` | `New environment`. Enter the name `Prod` and click `Configure environment`.
+7. __Create a [new Environment](/../../settings/environments/new)__ under `Settings` | `Environments` | `New environment`. Enter the name `Prod` and click `Configure environment`.
 
 8. Add yourself as a __required reviewer__ and click `Save protection rule`:
 
@@ -53,7 +53,7 @@ In this hands-on lab you will deploy a simple website to Azure App Services usin
     --xml
    ```
 
-10. __Open [.github/workflows/Deploy-Azure.yml](/../../.github/workflows/Deploy-Azure.yml)__ and ajust the app name at the top of the file:
+10. __Open [.github/workflows/Deploy-Azure.yml](/../../blob/main/.github/workflows/Deploy-Azure.yml)__ and ajust the app name at the top of the file:
 
     ```yaml
     env:
