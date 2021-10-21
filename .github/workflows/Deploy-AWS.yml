@@ -26,6 +26,7 @@ jobs:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ${{ env.AWS_REGION }}
+          mask-aws-account-id: no
 
       - name: Login to Amazon ECR
         id: login-ecr
@@ -38,9 +39,11 @@ jobs:
           IMAGE_TAG: ${{ github.sha }}
         working-directory: ch9_release/src/Tailwind.Traders.Web
         run: |
-          docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
-          docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
-          echo "::set-output name=image::$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG"
+          imagename=$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
+          echo "Build and push $imagename"
+          docker build -t $imagename .
+          docker push $imagename
+          echo "::set-output name=image::$imagename"
 
   Deploy:
     runs-on: ubuntu-latest
