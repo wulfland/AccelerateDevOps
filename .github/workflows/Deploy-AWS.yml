@@ -8,7 +8,7 @@ env:
   ECS_SERVICE: xyz-demo-shop-service
   ECS_CLUSTER: default2
   ECS_TASK_DEFINITION: ch9_release/aws-task-definition.json
-  CONTAINER_NAME: tbd
+  CONTAINER_NAME: xyz-demo-shop
 
 jobs:
   deploy:
