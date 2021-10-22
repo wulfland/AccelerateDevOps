@@ -21,11 +21,11 @@ In this hands-on lab you will deploy a simple container to Amazon AWS `Elastic C
 
 3. __Create access key__: In AWS go to `My Security Credentials` | `Access keys`| `Create New Access Key`: 
 
-    ![001_create_access_key.png](001_create_access_key.png)
+    <img width="1112" alt="001_create_access_key" src="https://user-images.githubusercontent.com/5276337/138446505-d9ff0139-9e3b-42c6-b637-476cb51a3e72.png">
 
     Note the `Access Key ID` and `Secret Access Key`:
 
-    ![002_IAM Management Console.png](002_IAM Management Console.png)
+    <img width="520" alt="002_IAM Management Console" src="https://user-images.githubusercontent.com/5276337/138446553-b55c2259-7044-4f3a-bef3-820086cd2ea0.png">
 
 4. __Create repository secrets__: In your forked repository go to [Settings | Secrets](/../../settings/secrets/actions) and create to new secrets `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY` using the values of the previous step.
 
@@ -45,68 +45,68 @@ In this hands-on lab you will deploy a simple container to Amazon AWS `Elastic C
 
 6. __Run the workflow__: Manually trigger [the workflow](/../../actions/workflows/Deploy-AWS.yml).
 
-    ![003_First-Run.png](C:\Users\kaufm\Packt\B17827 - Accelerate DevOps with GitHub - General\B17827\img\B17827_09\aws\003_First-Run.png)
+    <img width="1202" alt="003_First-Run" src="https://user-images.githubusercontent.com/5276337/138446585-924877e9-39cd-4f86-bd0e-a349435ec692.png">
 
     It is expected that the second job `Deploy` will fail as we hav not jet configured ECS. But `Build` will work and publish our image to the registry.
 
     Expand `Build, tag, and push image to Amazon ECR` and copy the image name:
 
-    ![004_Imagename.png](C:\Users\kaufm\Packt\B17827 - Accelerate DevOps with GitHub - General\B17827\img\B17827_09\aws\004_Imagename.png) 
+    <img width="889" alt="004_Imagename" src="https://user-images.githubusercontent.com/5276337/138446607-b8d8e0e5-625f-4891-ad6c-080e528c758e.png">
 
 7. __Create cluster and ECS__: Open the [Getting Started with Amazon Elastic Container Service (Amazon ECS) using Fargate](https://us-east-2.console.aws.amazon.com/ecs/home?region=us-east-2#/firstRun) wizard (be aware that this url contains the region!).
 
     Click `Configure` on the `custom` tile.
 
-    ![005-Amazon ECS.png](C:\Users\kaufm\Packt\B17827 - Accelerate DevOps with GitHub - General\B17827\img\B17827_09\aws\005-Amazon ECS.png)
+    <img width="848" alt="005-Amazon ECS" src="https://user-images.githubusercontent.com/5276337/138446629-d9108df5-e9f2-47b7-8c49-f201d0230677.png">
 
     Enter the 'container name' you set in yaml and the image name you copied in the previouse step. Set the port to 80: 
 
-    ![006_Image.png](C:\Users\kaufm\Packt\B17827 - Accelerate DevOps with GitHub - General\B17827\img\B17827_09\aws\006_Image.png)
+    <img width="967" alt="006_Image" src="https://user-images.githubusercontent.com/5276337/138446658-4b4b00ab-4b86-4f84-b65b-bd44bd32c18f.png">
 
     Click `Next`.
 
     Select the `Application Load Balancer` and click `Next`:
 
-    ![007_Amazon ECS.png](C:\Users\kaufm\Packt\B17827 - Accelerate DevOps with GitHub - General\B17827\img\B17827_09\aws\007_Amazon ECS.png)
+    <img width="665" alt="007_Amazon ECS" src="https://user-images.githubusercontent.com/5276337/138446683-5bf57a23-8696-4aef-8e3c-e07dc6206166.png">
 
     Set the `Cluster name` to the value from the yaml in step 5.
 
-    ![008_Cluster.png](C:\Users\kaufm\Packt\B17827 - Accelerate DevOps with GitHub - General\B17827\img\B17827_09\aws\008_Cluster.png)
+    <img width="681" alt="008_Cluster" src="https://user-images.githubusercontent.com/5276337/138446716-6e6e8da5-179c-420d-8357-69c7952f0a07.png">
 
     Click `Next' and create the cluster.
 
-    ![009_Amazon ECS.png](C:\Users\kaufm\Packt\B17827 - Accelerate DevOps with GitHub - General\B17827\img\B17827_09\aws\009_Amazon ECS.png)
+    <img width="937" alt="009_Amazon ECS" src="https://user-images.githubusercontent.com/5276337/138446743-682115bd-295d-4559-ba5c-16b442629185.png">
 
     Wait until all resource have been created and click `View service`:
 
  8. __Copy and save taskrun definition__: Click on the task definition link:
 
-    ![010_cluster.png]("C:\Users\kaufm\Packt\B17827 - Accelerate DevOps with GitHub - General\B17827\img\B17827_09\aws\010_cluster.png")
+    <img width="564" alt="010_cluster" src="https://user-images.githubusercontent.com/5276337/138446772-9d84e4a7-06d5-4118-9afb-75e34e7c68f6.png">
 
     Copy all the content from the `JSON` tab to your clipboard.
 
-    ![011_taskdef.png]("C:\Users\kaufm\Packt\B17827 - Accelerate DevOps with GitHub - General\B17827\img\B17827_09\aws\011_taskdef.png")
+    <img width="425" alt="011_taskdef" src="https://user-images.githubusercontent.com/5276337/138446790-bcf2e82e-7781-4f54-98c2-30905fbc5ece.png">
 
     Open the file [ch9_release/aws-task-definition.json](/../../blob/main/ch9_release/aws-task-definition.json), edit it, and past the content. Commit the file.
 
 9. __Check that your container is running__: To see that you container is running we have to find the DNS name of the load balancer. Go back to your cluster and open the target group:
 
-    "C:\Users\kaufm\Packt\B17827 - Accelerate DevOps with GitHub - General\B17827\img\B17827_09\aws\012_lb1.png"
+    <img width="552" alt="012_lb1" src="https://user-images.githubusercontent.com/5276337/138446816-b5f1b684-e0f4-4d5b-98b8-4081db1c6d68.png">
 
     Click the load balancer in the group:
 
-    "C:\Users\kaufm\Packt\B17827 - Accelerate DevOps with GitHub - General\B17827\img\B17827_09\aws\013_lb2.png"
+    <img width="793" alt="013_lb2" src="https://user-images.githubusercontent.com/5276337/138446832-ba261ec4-bbe2-4ed6-828f-ab7fb76ff140.png">
 
     In the loadbalancer you see the DNS name under `Description`. Copy it:
 
-    "C:\Users\kaufm\Packt\B17827 - Accelerate DevOps with GitHub - General\B17827\img\B17827_09\aws\014_lb3.png"
+    <img width="821" alt="014_lb3" src="https://user-images.githubusercontent.com/5276337/138446856-9022ebb5-d98d-4796-aea8-777abb4509ae.png">
 
     Paste it into a new browser window or tab. You should see the Tailwind Traiders website from our container:
 
-    "C:\Users\kaufm\Packt\B17827 - Accelerate DevOps with GitHub - General\B17827\img\B17827_09\aws\015_running container.png"
+    <img width="775" alt="015_running container" src="https://user-images.githubusercontent.com/5276337/138446884-4f2a9f11-8ba9-4733-a860-8dc2566188a1.png">
 
 10. __Run the workflow again__: Manually trigger [the workflow again](/../../actions/workflows/Deploy-AWS.yml).
 
-    ![003_First-Run.png](C:\Users\kaufm\Packt\B17827 - Accelerate DevOps with GitHub - General\B17827\img\B17827_09\aws\003_First-Run.png)
+    <img width="1202" alt="003_First-Run" src="https://user-images.githubusercontent.com/5276337/138446585-924877e9-39cd-4f86-bd0e-a349435ec692.png">
 
     This time your workflow runs without error and deploys your latest version of the container.
