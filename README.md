@@ -38,3 +38,4 @@ A sample for navigation and ToC in a custom wiki can be found [here](ch4_customW
 Hands-on execices ✋
 
 1. [Deploy to Azure App Service](ch9_release/Deploy_to_Azure_App_Service.md)
+2. [Deploy to AWS Elastic Container Service (ECS)](ch9_release/Deploy_to_AWS_ECS.md)
