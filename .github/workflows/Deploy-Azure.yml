@@ -61,7 +61,7 @@ jobs:
         publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE }}
         package: website
 
-    - name: Run a smoke test on the staging slot before swapping
+    - name: Run a smoke test
       run: |
         url=https://${{ env.appName }}.azurewebsites.net/
         status=`curl --silent --head $url | head -1 | cut -f 2 -d' '`
