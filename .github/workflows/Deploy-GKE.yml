@@ -5,7 +5,7 @@ on: [workflow_dispatch]
 env:
   PROJECT_ID: ${{ secrets.GKE_PROJECT }}
   GKE_CLUSTER: xyz-demo-shop-cluster
-  GKE_ZONE: europe-west3-a
+  GKE_LOCATION: europe-west3
   DEPLOYMENT_NAME: xyz-demo-deployment
   IMAGE: xyz-demo-shop
 
@@ -34,7 +34,7 @@ jobs:
     - uses: google-github-actions/get-gke-credentials@v0.2.1
       with:
         cluster_name: ${{ env.GKE_CLUSTER }}
-        location: ${{ env.GKE_ZONE }}
+        location: ${{ env.GKE_LOCATION }}
         credentials: ${{ secrets.GKE_SA_KEY }}
 
     # Build the Docker image
