@@ -28,7 +28,7 @@ jobs:
     # Configure Docker to use the gcloud command-line tool as a credential
     # helper for authentication
     - run: |-
-        gcloud --quiet auth configure-docker
+        gcloud auth configure-docker
 
     # Get the GKE credentials so we can deploy to the cluster
     - uses: google-github-actions/get-gke-credentials@v0.2.1
@@ -36,6 +36,7 @@ jobs:
         cluster_name: ${{ env.GKE_CLUSTER }}
         location: ${{ env.GKE_LOCATION }}
         credentials: ${{ secrets.GKE_SA_KEY }}
+        export_default_credentials: true
 
     # Build the Docker image
     - name: Build
