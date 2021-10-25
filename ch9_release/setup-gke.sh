@@ -1,8 +1,8 @@
 #!/bin/bash
 
 
-# Create a project:
-https://console.cloud.google.com/projectselector2/home/dashboard
+# Create a project and set GKE_PROJECT to the project id:
+# See https://console.cloud.google.com/projectselector2/home/dashboard
 
 # Set parameters
 GKE_PROJECT=valid-octagon-330106
@@ -61,5 +61,5 @@ export GKE_SA_KEY=$(cat key.json | base64)
 echo ""
 echo "Please create a secret named 'GKE_SA_KEY' in GitHub with the followign content:"
 echo ""
-echo $GKE_SA_KEY
+cat key.json | base64
 echo ""
