@@ -20,3 +20,6 @@ gcloud container clusters delete $GKE_CLUSTER
 
 # Delete service account
 gcloud iam service-accounts delete "$GKE_SERVICE@$GKE_PROJECT.iam.gserviceaccount.com"
+
+# Delete repository
+gcloud artifacts repositories delete $GKE_PROJECT

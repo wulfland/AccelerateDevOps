@@ -6,6 +6,7 @@ env:
   PROJECT_ID: ${{ secrets.GKE_PROJECT }}
   GKE_CLUSTER: xyz-demo-cluster
   GKE_LOCATION: europe-west3-a
+  GKE_REGION: europe-west3
   DEPLOYMENT_NAME: xyz-demo-shop-deployment
   IMAGE: xyz-demo-shop
 
@@ -36,9 +37,9 @@ jobs:
     # Build the Docker image
     - name: Build
       working-directory: ch9_release/src/Tailwind.Traders.Web
-      run: |-
+      run: |-  
         docker build \
-          --tag "gcr.io/$PROJECT_ID/$IMAGE:$GITHUB_SHA" \
+          --tag "$GKE_REGION-docker.pkg.dev/$PROJECT_ID/$PROJECT_ID/$IMAGE:$GITHUB_SHA" \
           --build-arg GITHUB_SHA="$GITHUB_SHA" \
           --build-arg GITHUB_REF="$GITHUB_REF" \
           .
@@ -46,8 +47,8 @@ jobs:
     # Push the Docker image to Google Container Registry
     - name: Publish
       run: |-
-        gcloud auth configure-docker --quiet
-        docker push "gcr.io/$PROJECT_ID/$IMAGE:$GITHUB_SHA"
+        gcloud auth configure-docker $GKE_REGION-docker.pkg.dev --quiet
+        docker push "$GKE_REGION-docker.pkg.dev/$PROJECT_ID/$PROJECT_ID/$IMAGE:$GITHUB_SHA"
 
     # Set up kustomize
     - name: Set up Kustomize

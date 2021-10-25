@@ -53,8 +53,10 @@ gcloud projects add-iam-policy-binding $GKE_PROJECT \
 # Download JSON
 gcloud iam service-accounts keys create key.json --iam-account=$GKE_SVC_MAIL
 
-# Activate service account
-gcloud auth activate-service-account --key-file key.json
+# Create repository
+gcloud artifacts repositories create $GKE_PROJECT \
+   --repository-format=docker \
+   --description="Docker repository"
 
 export GKE_SA_KEY=$(cat key.json | base64)
 
