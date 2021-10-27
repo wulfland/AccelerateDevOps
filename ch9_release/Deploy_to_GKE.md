@@ -4,9 +4,9 @@ In this hands-on you will deploy a simple container application to `Google Kuber
 
 1. __Create a cloud project__ in [console.cloud.google.com](https://console.cloud.google.com/projectselector2/home/dashboard) and note the project-id (not the name!).
 
-1. __Create a fork__ of [this repository](https://github.com/wulfland/AccelerateDevOps) (if you haven'nt done so) by clicking the `Fork` button at the top right corner. 
+2. __Create a fork__ of [this repository](https://github.com/wulfland/AccelerateDevOps) (if you haven'nt done so) by clicking the `Fork` button at the top right corner. 
 
-2. __Open [setup-gke.sh](setup-gke.sh)__ and replace the value of `GKE_PROJECT` with your project-id:
+3. __Open [setup-gke.sh](setup-gke.sh)__ and replace the value of `GKE_PROJECT` with your project-id:
 
     ```bash
     export GKE_PROJECT=valid-octagon-330106
@@ -31,9 +31,9 @@ In this hands-on you will deploy a simple container application to `Google Kuber
 
     Commit and push the changes to your forked repository.
 
-3. __Open [Google Cloud Shell](https://cloud.google.com/shell)__ and authenticate.
+4. __Open [Google Cloud Shell](https://cloud.google.com/shell)__ and authenticate.
 
-4. __Clone__ your forked repository to the cloud shell. Change directory and mark the setup script as executable:
+5. __Clone__ your forked repository to the cloud shell. Change directory and mark the setup script as executable:
 
     ```console
     $ git clone https://github.com/<github-handle>/AccelerateDevOps.git
@@ -41,24 +41,62 @@ In this hands-on you will deploy a simple container application to `Google Kuber
     $ chmod +x setup-gke.sh
     ```
 
-5. __Execute the script__ [setup-gke.sh](setup-gke.sh):
+6. __Execute the script__ [setup-gke.sh](setup-gke.sh):
 
     ```console
     $ ./setup-gke.sh
     ```
 
-    The script create a cluster, service account, and artifact repository.
+    The script creates a cluster, artifact repository, and service account. 
+    It than builds the docker container, uploads it to the artifact registry, and deploys it to the cluster.
 
-6. __Add a [new repository secret](/../../settings/secrets/actions/new)__ with the name `GKE_SA_KEY` and the value from key.json that is also displayed at the console. Add another secret `GKE_PROJECT` with the project-id from step 1.
+    The script executes `kubectl get service` - but probably your IP takes some time to get provisioned. Wait some time and execute the command again until you see an IP address:
 
-7. 
+    ![img]("C:\Users\kaufm\Packt\B17827 - Accelerate DevOps with GitHub - General\B17827\img\B17827_09\gke\01_get-service.png")
 
+    Open the IP in browser and verify that the container is running successfully:
 
-kubectl create deployment xyz-demo-shop-deployment --image europe-west3-docker.pkg.dev/valid-octagon-330106/valid-octagon-330106/xyz-demo-shop:test
+    ![img]("C:\Users\kaufm\Packt\B17827 - Accelerate DevOps with GitHub - General\B17827\img\B17827_09\gke\02_app-in-cluster.png")
 
-kubectl scale deployment xyz-demo-shop-deployment --replicas 3
-deployment.apps/xyz-demo-shop-deployment scaled
+    The script also reads the `key.json`. You can run the following command again if you missed it:
 
-kubectl expose deployment xyz-demo-shop-deployment --name xyz-demo-shop-service --type=LoadBalancer --port 80 --target-port 80
+    ```console
+    $ cat key.json | base64
+    ``` 
 
-kubectl get service
+    Copy the base64 encoded content of the file to your clipboard.
+
+    ![img]("C:\Users\kaufm\Packt\B17827 - Accelerate DevOps with GitHub - General\B17827\img\B17827_09\gke\03_key-json.png")
+
+6. __Add a [new repository secret](/../../settings/secrets/actions/new)__ with the name `GKE_SA_KEY` and the value from key.json (past it from your clipboard or go back to the console to copy it). Add another secret `GKE_PROJECT` with the project-id from step 1.
+
+7. __Edit [Deploy-GKE.yml](/../../blob/main/.github/workflows/Deploy-GKE.yml)__ in `.github/workflows/` and replace the values under `env:` with the same values in step 3:
+
+```yaml
+env:
+  GKE_PROJECT: ${{ secrets.GKE_PROJECT }}
+  GKE_CLUSTER: xyz-demo-cluster
+  GKE_APP_NAME: xyz-demo-shop
+  GKE_SERVICE: xyz-service
+  GKE_SERVICE_ACCOUNT: xyz-serviceaccount
+  GKE_DEPLOYMENT_NAME: xyz-demo-shop-deployment
+  GKE_REGION: europe-west3
+  GKE_ZONE: europe-west3-a
+```
+
+8. __Have a look__ at [Service.yml](/../../blob/main/ch9_release/src/Tailwind.Traders.Web/Service.yml) and [Deployment.yml](blob/main/ch9_release/src/Tailwind.Traders.Web/Deployment.yml). You don't have to modify the files - just take a look at them as they will perform the deployment. The environment variables will be repaced during the deployment.
+
+9. __Run the workflow [Deploy-GKE.yml](/../../actions/workflows/Deploy-GKE.yml)__ under `Actions` | `Deploy-GKE` | `Run workflow`:
+
+    ![img]("C:\Users\kaufm\Packt\B17827 - Accelerate DevOps with GitHub - General\B17827\img\B17827_09\gke\04_run-workflow.png")
+
+    The workflow will build the docker compainer and deploy it to your cluster.
+
+    ![img]("C:\Users\kaufm\Packt\B17827 - Accelerate DevOps with GitHub - General\B17827\img\B17827_09\gke\05_success.png")
+
+10. __Clean up__ your resources by ececuting the [destroy-gke.sh](destroy-gke.sh) script:
+
+    ```console
+    $ chmod +x destroy-gke.sh
+    $ ./destroy-gke.sh
+    ```
