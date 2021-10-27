@@ -61,14 +61,4 @@ jobs:
     - name: Deploy
       working-directory: ch9_release/src/Tailwind.Traders.Web
       run: |-
-        # ./kustomize edit set image gcr.io/PROJECT_ID/IMAGE:TAG=gcr.io/$PROJECT_ID/$IMAGE:$GITHUB_SHA
-        # ./kustomize build . | kubectl apply -f -
-        # kubectl rollout status deployment/$DEPLOYMENT_NAME
-        # kubectl get services -o wide
-        kubectl create deployment $DEPLOYMENT_NAME --image=$GKE_REGION-docker.pkg.dev/$PROJECT_ID/$PROJECT_ID/$IMAGE:$GITHUB_SHA
-        kubectl scale deployment $DEPLOYMENT_NAME --replicas=3
-        kubectl autoscale deployment $DEPLOYMENT_NAME --cpu-percent=80 --min=1 --max=5
-        kubectl expose deployment $DEPLOYMENT_NAME --name=$DEPLOYMENT_NAME --type=LoadBalancer --port 80 --target-port 80
-        kubectl get services -o wide
-
-
+        kubectl set image deployment/$DEPLOYMENT_NAME $IMAGE="$GKE_REGION-docker.pkg.dev/$PROJECT_ID/$PROJECT_ID/$IMAGE:$GITHUB_SHA"
