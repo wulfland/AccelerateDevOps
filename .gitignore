@@ -10,3 +10,6 @@
 
 # Ignore Thumbs.db
 Thumbs.db
+
+# keyfile for aws
+key.json

@@ -2,20 +2,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: xyz-demo-shop-deployment
+  name: $DEPLOYMENT_NAME
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: xyz-demo-shop
+      app: $IMAGE
   template:
     metadata:
       labels:
-        app: xyz-demo-shop
+        app: $IMAGE
     spec:
       containers:
-      - name: xyz-demo-shop
-        image: europe-west3-docker.pkg.dev/valid-octagon-330106/valid-octagon-330106/xyz-demo-shop:$GITHUB_SHA
+      - name: $IMAGE
+        image: $GKE_REGION-docker.pkg.dev/$PROJECT_ID/$PROJECT_ID/$IMAGE:$GITHUB_SHA
         ports:
         - containerPort: 80
         env:

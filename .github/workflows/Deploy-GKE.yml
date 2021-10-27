@@ -40,6 +40,7 @@ jobs:
   Deploy:
     runs-on: ubuntu-latest
     environment: prod
+    needs: Build
 
     steps:
     - name: Checkout
@@ -63,8 +64,8 @@ jobs:
     - name: Deploy
       working-directory: ch9_release/src/Tailwind.Traders.Web
       run: |-
-        # Deployment using kubectl
+        # Option 1: Deployment using kubectl
         kubectl set image deployment/$DEPLOYMENT_NAME $IMAGE="$GKE_REGION-docker.pkg.dev/$PROJECT_ID/$PROJECT_ID/$IMAGE:$GITHUB_SHA"
 
-        # Deployment using config file 'deployment.yaml'
-        envsubst < deployment.yaml | kubectl apply -f 
+        # Option 2: Deployment using config file 'deployment.yaml'
+        envsubst < Deployment.yml | kubectl apply -f -
