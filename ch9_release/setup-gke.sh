@@ -55,11 +55,14 @@ gcloud iam service-accounts list
 
 GKE_SVC_MAIL="$GKE_SERVICE_ACCOUNT@$GKE_PROJECT.iam.gserviceaccount.com"
 
-# Add roles:
+# Add 'container.clusterAdmin' role:
 gcloud projects add-iam-policy-binding $GKE_PROJECT \
   --member=serviceAccount:$GKE_SVC_MAIL \
-  --role=roles/storage.admin \
-  --role=roles/container.clusterAdmin \
+  --role=roles/container.clusterAdmin 
+
+# Add 'artifactregistry.admin' role:
+gcloud projects add-iam-policy-binding $GKE_PROJECT \
+  --member=serviceAccount:$GKE_SVC_MAIL \
   --role=roles/artifactregistry.admin
 
 # Download JSON
