@@ -4,7 +4,7 @@ In this hands-on you will deploy a simple container application to `Google Kuber
 
 1. __Create a cloud project__ in [console.cloud.google.com](https://console.cloud.google.com/projectselector2/home/dashboard) and note the project-id (not the name!).
 
-2. __Create a fork__ of [this repository](https://github.com/wulfland/AccelerateDevOps) (if you haven'nt done so) by clicking the `Fork` button at the top right corner. 
+2. __Create a fork__ of [this repository](https://github.com/wulfland/AccelerateDevOps) (if you haven't done so) by clicking the `Fork` button at the top right corner. 
 
 3. __Open [setup-gke.sh](setup-gke.sh)__ and replace the value of `GKE_PROJECT` with your project-id:
 
@@ -58,7 +58,7 @@ In this hands-on you will deploy a simple container application to `Google Kuber
 
     ![img]("C:\Users\kaufm\Packt\B17827 - Accelerate DevOps with GitHub - General\B17827\img\B17827_09\gke\02_app-in-cluster.png")
 
-    The script also reads the `key.json`. You can run the following command again if you missed it:
+    The script also reads the `key.json`. You could run the following command again if you missed it:
 
     ```console
     $ cat key.json | base64
@@ -84,17 +84,17 @@ env:
   GKE_ZONE: europe-west3-a
 ```
 
-8. __Have a look__ at [Service.yml](/../../blob/main/ch9_release/src/Tailwind.Traders.Web/Service.yml) and [Deployment.yml](blob/main/ch9_release/src/Tailwind.Traders.Web/Deployment.yml). You don't have to modify the files - just take a look at them as they will perform the deployment. The environment variables will be repaced during the deployment.
+8. __Have a look__ at [Service.yml](/../../blob/main/ch9_release/src/Tailwind.Traders.Web/Service.yml) and [Deployment.yml](blob/main/ch9_release/src/Tailwind.Traders.Web/Deployment.yml). You don't have to modify the files - just take a look at them as they will perform the deployment. The environment variables will be replaced during the deployment.
 
 9. __Run the workflow [Deploy-GKE.yml](/../../actions/workflows/Deploy-GKE.yml)__ under `Actions` | `Deploy-GKE` | `Run workflow`:
 
     ![img]("C:\Users\kaufm\Packt\B17827 - Accelerate DevOps with GitHub - General\B17827\img\B17827_09\gke\04_run-workflow.png")
 
-    The workflow will build the docker compainer and deploy it to your cluster.
+    The workflow will build the docker container and deploy it to your cluster.
 
     ![img]("C:\Users\kaufm\Packt\B17827 - Accelerate DevOps with GitHub - General\B17827\img\B17827_09\gke\05_success.png")
 
-10. __Clean up__ your resources by ececuting the [destroy-gke.sh](destroy-gke.sh) script:
+10. __Clean up__ your resources by executing the [destroy-gke.sh](destroy-gke.sh) script:
 
     ```console
     $ chmod +x destroy-gke.sh
