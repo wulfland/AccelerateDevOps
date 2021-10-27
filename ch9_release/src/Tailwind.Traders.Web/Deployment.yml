@@ -1,0 +1,23 @@
+# This file configures the hello-world app which serves public web traffic.
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: xyz-demo-shop-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: xyz-demo-shop
+  template:
+    metadata:
+      labels:
+        app: xyz-demo-shop
+    spec:
+      containers:
+      - name: xyz-demo-shop
+        image: europe-west3-docker.pkg.dev/valid-octagon-330106/valid-octagon-330106/xyz-demo-shop:$GITHUB_SHA
+        ports:
+        - containerPort: 80
+        env:
+          - name: PORT
+            value: "80"

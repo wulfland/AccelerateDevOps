@@ -11,8 +11,33 @@ env:
   IMAGE: xyz-demo-shop
 
 jobs:
-  setup-build-publish-deploy:
-    name: Setup, Build, Publish, and Deploy
+  Build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    # Setup gcloud CLI
+    - uses: google-github-actions/setup-gcloud@v0.2.0
+      with:
+        service_account_key: ${{ secrets.GKE_SA_KEY }}
+        project_id: ${{ secrets.GKE_PROJECT }}
+        export_default_credentials: true 
+
+    # Build the Docker image
+    - name: Build and Push
+      working-directory: ch9_release/src/Tailwind.Traders.Web
+      run: |-  
+        docker build \
+          --tag "$GKE_REGION-docker.pkg.dev/$PROJECT_ID/$PROJECT_ID/$IMAGE:$GITHUB_SHA" \
+          --build-arg GITHUB_SHA="$GITHUB_SHA" \
+          --build-arg GITHUB_REF="$GITHUB_REF" \
+          .
+        gcloud auth configure-docker $GKE_REGION-docker.pkg.dev --quiet
+        docker push "$GKE_REGION-docker.pkg.dev/$PROJECT_ID/$PROJECT_ID/$IMAGE:$GITHUB_SHA"     
+
+  Deploy:
     runs-on: ubuntu-latest
     environment: prod
 
@@ -27,22 +52,6 @@ jobs:
         project_id: ${{ secrets.GKE_PROJECT }}
         export_default_credentials: true 
 
-    # Build the Docker image
-    - name: Build
-      working-directory: ch9_release/src/Tailwind.Traders.Web
-      run: |-  
-        docker build \
-          --tag "$GKE_REGION-docker.pkg.dev/$PROJECT_ID/$PROJECT_ID/$IMAGE:$GITHUB_SHA" \
-          --build-arg GITHUB_SHA="$GITHUB_SHA" \
-          --build-arg GITHUB_REF="$GITHUB_REF" \
-          .
-
-    # Push the Docker image to Google Container Registry
-    - name: Publish
-      run: |-
-        gcloud auth configure-docker $GKE_REGION-docker.pkg.dev --quiet
-        docker push "$GKE_REGION-docker.pkg.dev/$PROJECT_ID/$PROJECT_ID/$IMAGE:$GITHUB_SHA"
-
     # Get the GKE credentials so we can deploy to the cluster
     - uses: google-github-actions/get-gke-credentials@v0.2.1
       with:
@@ -50,15 +59,12 @@ jobs:
         location: ${{ env.GKE_LOCATION }}
         credentials: ${{ secrets.GKE_SA_KEY }}
 
-    # Set up kustomize
-    - name: Set up Kustomize
-      working-directory: ch9_release/src/Tailwind.Traders.Web
-      run: |-
-        curl -sfLo kustomize https://github.com/kubernetes-sigs/kustomize/releases/download/v3.1.0/kustomize_3.1.0_linux_amd64
-        chmod u+x ./kustomize
-
-    # Deploy the Docker image to the GKE cluster
+    # Deploy the new Docker image to the GKE cluster
     - name: Deploy
       working-directory: ch9_release/src/Tailwind.Traders.Web
       run: |-
+        # Deployment using kubectl
         kubectl set image deployment/$DEPLOYMENT_NAME $IMAGE="$GKE_REGION-docker.pkg.dev/$PROJECT_ID/$PROJECT_ID/$IMAGE:$GITHUB_SHA"
+
+        # Deployment using config file 'deployment.yaml'
+        envsubst < deployment.yaml | kubectl apply -f 
