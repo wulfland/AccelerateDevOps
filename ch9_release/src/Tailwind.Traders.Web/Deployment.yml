@@ -1,21 +1,21 @@
-# This file configures the hello-world app which serves public web traffic.
+# This file configures the $GKE_APP_NAME app which serves public web traffic on port 80
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: $DEPLOYMENT_NAME
+  name: $GKE_APP_NAME
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: $IMAGE
+      app: $GKE_APP_NAME
   template:
     metadata:
       labels:
-        app: $IMAGE
+        app: $GKE_APP_NAME
     spec:
       containers:
-      - name: $IMAGE
-        image: $GKE_REGION-docker.pkg.dev/$PROJECT_ID/$PROJECT_ID/$IMAGE:$GITHUB_SHA
+      - name: $GKE_APP_NAME
+        image: $GKE_REGION-docker.pkg.dev/$GKE_PROJECT/$GKE_PROJECT/$GKE_APP_NAME:$GITHUB_SHA
         ports:
         - containerPort: 80
         env:
