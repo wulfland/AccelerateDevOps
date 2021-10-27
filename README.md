@@ -41,3 +41,4 @@ Hands-on execices ✋
 
 1. [Deploy to Azure App Service](ch9_release/Deploy_to_Azure_App_Service.md)
 2. [Deploy to AWS Elastic Container Service (ECS)](ch9_release/Deploy_to_AWS_ECS.md)
+3. [Deploy to Google Kubernetes Engine (GKE)](ch9_release/Deploy_to_GKE.md)
