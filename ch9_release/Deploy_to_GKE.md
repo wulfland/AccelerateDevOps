@@ -52,11 +52,11 @@ In this hands-on you will deploy a simple container application to `Google Kuber
 
     The script executes `kubectl get service` - but probably your IP takes some time to get provisioned. Wait some time and execute the command again until you see an IP address:
 
-    ![img]("C:\Users\kaufm\Packt\B17827 - Accelerate DevOps with GitHub - General\B17827\img\B17827_09\gke\01_get-service.png")
+    <img width="589" alt="01_get-service" src="https://user-images.githubusercontent.com/5276337/139122676-d6df1cbf-97be-4b5b-9de8-e73e3ed0a7b3.png">
 
     Open the IP in browser and verify that the container is running successfully:
 
-    ![img]("C:\Users\kaufm\Packt\B17827 - Accelerate DevOps with GitHub - General\B17827\img\B17827_09\gke\02_app-in-cluster.png")
+    <img width="500" alt="02_app-in-cluster" src="https://user-images.githubusercontent.com/5276337/139122712-7d7d1b33-88e2-442f-abeb-5d2de3e2468c.png">
 
     The script also reads the `key.json`. You can run the following command again if you missed it:
 
@@ -66,7 +66,7 @@ In this hands-on you will deploy a simple container application to `Google Kuber
 
     Copy the base64 encoded content of the file to your clipboard.
 
-    ![img]("C:\Users\kaufm\Packt\B17827 - Accelerate DevOps with GitHub - General\B17827\img\B17827_09\gke\03_key-json.png")
+    <img width="616" alt="03_key-json" src="https://user-images.githubusercontent.com/5276337/139122765-fa11869d-57a3-4a53-88f1-fcd02cf30aff.png">
 
 6. __Add a [new repository secret](/../../settings/secrets/actions/new)__ with the name `GKE_SA_KEY` and the value from key.json (past it from your clipboard or go back to the console to copy it). Add another secret `GKE_PROJECT` with the project-id from step 1.
 
@@ -88,11 +88,11 @@ env:
 
 9. __Run the workflow [Deploy-GKE.yml](/../../actions/workflows/Deploy-GKE.yml)__ under `Actions` | `Deploy-GKE` | `Run workflow`:
 
-    ![img]("C:\Users\kaufm\Packt\B17827 - Accelerate DevOps with GitHub - General\B17827\img\B17827_09\gke\04_run-workflow.png")
+    <img width="1102" alt="04_run-workflow" src="https://user-images.githubusercontent.com/5276337/139122808-6214aa62-79d3-4cd3-a340-3dba0bd43325.png">
 
     The workflow will build the docker compainer and deploy it to your cluster.
 
-    ![img]("C:\Users\kaufm\Packt\B17827 - Accelerate DevOps with GitHub - General\B17827\img\B17827_09\gke\05_success.png")
+    <img width="1094" alt="05_success" src="https://user-images.githubusercontent.com/5276337/139122843-1a725f4c-4729-437a-9b5d-74b1bd6f1b41.png">
 
 10. __Clean up__ your resources by ececuting the [destroy-gke.sh](destroy-gke.sh) script:
 
