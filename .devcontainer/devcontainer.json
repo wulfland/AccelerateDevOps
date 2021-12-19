@@ -9,8 +9,11 @@
 		}
 	},
 
-	// Set default container specific settings.json values on container create.
-	"settings": {},
+	// Set default container specific settings for vs code
+	"settings": {
+		"diffEditor.codeLens": true,
+		"omnisharp.autoStart": true
+	},
 
 	// Install the following VSCode extensions:
 	"extensions": [
