@@ -1,7 +1,7 @@
 version: 2
 updates:
   - package-ecosystem: "npm"
-    directory: "ch9_release/src/Tailwind.Traders.Web"
+    directory: "ch9_release/src/Tailwind.Traders.Web/ClientApp"
     schedule:
       interval: "daily"
       
