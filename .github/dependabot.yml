@@ -1,0 +1,13 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "ch9_release/src/Tailwind.Traders.Web"
+    
+  - package-ecosystem: "nuget"
+    directory: "ch9_release/src/Tailwind.Traders.Web"
+
+  - package-ecosystem: "docker"
+    directory: "ch9_release/src/Tailwind.Traders.Web"
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
