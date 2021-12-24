@@ -2,12 +2,20 @@ version: 2
 updates:
   - package-ecosystem: "npm"
     directory: "ch9_release/src/Tailwind.Traders.Web"
-    
+    schedule:
+      interval: "daily"
+      
   - package-ecosystem: "nuget"
     directory: "ch9_release/src/Tailwind.Traders.Web"
+    schedule:
+      interval: "daily"
 
   - package-ecosystem: "docker"
     directory: "ch9_release/src/Tailwind.Traders.Web"
+    schedule:
+      interval: "weekly"
 
   - package-ecosystem: "github-actions"
     directory: "/"
+    schedule:
+      interval: "weekly"
