@@ -1,5 +1,5 @@
 {
-  "name": "@wulfland/package-demo",
+  "name": "@wulfland/AccelerateDevOps",
   "version": "1.0.1",
   "description": "This is just a demo to set up a package in minutes.",
   "main": "index.js",
@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wulfland/package-demo.git"
+    "url": "git+https://github.com/wulfland/AccelerateDevOps.git"
   },
   "author": "Michael Kaufmann (@wulfland)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/wulfland/package-demo/issues"
+    "url": "https://github.com/wulfland/AccelerateDevOps/issues"
   },
-  "homepage": "https://github.com/wulfland/package-demo#readme"
+  "homepage": "https://github.com/wulfland/AccelerateDevOps#readme"
 }
