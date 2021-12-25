@@ -46,7 +46,9 @@ jobs:
           version: $GITVERSION_SEMVER
       
       - run: npm ci
+        working-directory: ch8_packages/npm
             
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+        working-directory: ch8_packages/npm
