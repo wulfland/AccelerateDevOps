@@ -4,13 +4,13 @@ updates:
     directory: "ch9_release/src/Tailwind.Traders.Web/ClientApp"
     schedule:
       interval: "daily"
-    open-pull-requests-limit: 10
+    open-pull-requests-limit: 15
       
   - package-ecosystem: "nuget"
     directory: "ch9_release/src/Tailwind.Traders.Web"
     schedule:
       interval: "daily"
-    open-pull-requests-limit: 10
+    open-pull-requests-limit: 15
 
   - package-ecosystem: "docker"
     directory: "ch9_release/src/Tailwind.Traders.Web"
