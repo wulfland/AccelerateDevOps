@@ -46,7 +46,8 @@ jobs:
         uses: reedyuk/npm-version@1.1.1
         with:
           version: $GITVERSION_SEMVER
-      
+          package: ch8_packages/npm
+          
       - run: npm ci
         working-directory: ch8_packages/npm
             
