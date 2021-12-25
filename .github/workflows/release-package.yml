@@ -12,8 +12,10 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: 12
-      - run: npm ci
-      - run: npm test
+      - run: |
+          npm ci
+          npm test
+        working-directory: ch8_packages/npm
 
   publish-gpr:
     needs: build
