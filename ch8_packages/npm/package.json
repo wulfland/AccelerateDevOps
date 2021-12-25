@@ -1,0 +1,19 @@
+{
+  "name": "@wulfland/package-demo",
+  "version": "1.0.1",
+  "description": "This is just a demo to set up a package in minutes.",
+  "main": "index.js",
+  "scripts": {
+    "test": "exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wulfland/package-demo.git"
+  },
+  "author": "Michael Kaufmann (@wulfland)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wulfland/package-demo/issues"
+  },
+  "homepage": "https://github.com/wulfland/package-demo#readme"
+}
