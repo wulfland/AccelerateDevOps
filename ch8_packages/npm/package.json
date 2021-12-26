@@ -6,6 +6,7 @@
   "scripts": {
     "test": "exit 0"
   },
+  "private": false,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/wulfland/AccelerateDevOps.git"
