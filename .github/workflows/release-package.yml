@@ -55,3 +55,43 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
         working-directory: ch8_packages/npm
+ 
+  publish-npm:
+    needs: publish-gpr
+    runs-on: ubuntu-latest
+    environment: NPM
+    permissions:
+      packages: write
+      contents: read
+    steps:
+      - uses: actions/checkout@v2
+        with: 
+          fetch-depth: 0
+          
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 12
+          registry-url: https://registry.npmjs.org
+      
+      - name: Install GitVersion
+        uses: gittools/actions/gitversion/setup@v0.9.7
+        with:
+          versionSpec: '5.x'
+ 
+      - name: Determine Version
+        id:   gitversion
+        uses: gittools/actions/gitversion/execute@v0.9.7
+        
+      - name: 'Change NPM version'
+        uses: reedyuk/npm-version@1.1.1
+        with:
+          version: $GITVERSION_SEMVER
+          package: ch8_packages/npm
+          
+      - run: npm ci
+        working-directory: ch8_packages/npm
+            
+      - run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_PAT}}
+        working-directory: ch8_packages/npm
