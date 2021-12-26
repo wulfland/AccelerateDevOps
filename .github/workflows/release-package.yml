@@ -79,7 +79,7 @@ jobs:
       - name: 'Change NPM version'
         uses: reedyuk/npm-version@1.1.1
         with:
-          version: ${{ needs.publish-gpr.semver }}
+          version: ${{ needs.publish-gpr.outputs.semver }}
           package: ch8_packages/npm
           
       - run: npm ci
