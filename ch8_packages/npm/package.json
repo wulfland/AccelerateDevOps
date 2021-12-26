@@ -6,7 +6,10 @@
   "scripts": {
     "test": "exit 0"
   },
-  "private": false,
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/wulfland/AccelerateDevOps.git"
