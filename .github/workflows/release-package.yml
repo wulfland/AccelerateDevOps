@@ -23,6 +23,9 @@ jobs:
     permissions:
       packages: write
       contents: read
+    outputs:
+      semver: ${{ steps.gitversion.SemVer }}
+      
     steps:
       - uses: actions/checkout@v2
         with: 
@@ -72,20 +75,11 @@ jobs:
         with:
           node-version: 12
           registry-url: https://registry.npmjs.org
-      
-      - name: Install GitVersion
-        uses: gittools/actions/gitversion/setup@v0.9.7
-        with:
-          versionSpec: '5.x'
- 
-      - name: Determine Version
-        id:   gitversion
-        uses: gittools/actions/gitversion/execute@v0.9.7
-        
+           
       - name: 'Change NPM version'
         uses: reedyuk/npm-version@1.1.1
         with:
-          version: $GITVERSION_SEMVER
+          version: ${{ needs.publish-gpr.semver }}
           package: ch8_packages/npm
           
       - run: npm ci
