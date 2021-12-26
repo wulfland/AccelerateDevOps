@@ -24,7 +24,7 @@ jobs:
       packages: write
       contents: read
     outputs:
-      semver: ${{ steps.gitversion.SemVer }}
+      semver: ${{ steps.gitversion.outputs.SemVer }}
       
     steps:
       - uses: actions/checkout@v2
