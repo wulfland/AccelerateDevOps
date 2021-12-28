@@ -28,7 +28,7 @@
     "react": "^16.14.0",
     "react-a11y-dialog": "^4.2.0",
     "react-dom": "^16.14.0",
-    "react-i18next": "^8.1.0",
+    "react-i18next": "^11.15.2",
     "react-redux": "^7.2.6",
     "react-router": "^6.2.1",
     "react-router-dom": "^4.3.1",
