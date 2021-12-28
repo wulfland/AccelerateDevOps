@@ -20,7 +20,7 @@
     "history": "^5.2.0",
     "i18next": "^21.6.4",
     "izitoast": "^1.4.0",
-    "msal": "^1.4.10",
+    "msal": "^1.4.15",
     "node-sass": "^7.0.1",
     "office-ui-fabric-react": "^7.170.0",
     "prop-types": "^15.8.0",
