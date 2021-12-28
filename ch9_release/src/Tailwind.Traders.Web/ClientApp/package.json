@@ -21,7 +21,7 @@
     "i18next": "^21.6.4",
     "izitoast": "^1.4.0",
     "msal": "^1.4.10",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.1",
     "office-ui-fabric-react": "^7.170.0",
     "prop-types": "^15.6.2",
     "qs": "^6.10.2",
