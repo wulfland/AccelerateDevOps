@@ -9,7 +9,7 @@
     "@azure/communication-common": "^1.0.0",
     "@azure/communication-signaling": "^1.0.0-beta.5",
     "@azure/cosmos": "^2.0.5",
-    "@azure/logger": "^1.0.2",
+    "@azure/logger": "^1.0.3",
     "@babel/helper-compilation-targets": "^7.13.16",
     "@babel/helper-regex": "^7.10.5",
     "@fluentui/react": "^7.170.0",
