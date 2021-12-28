@@ -1,0 +1,30 @@
+name: PR-Validation
+
+on: [pull_request]
+
+jobs:
+  Build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: 'Checkout Github Action'
+      uses: actions/checkout@master
+
+    - name: Set up .NET Core
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: '5.0.x'
+
+    - name: Setup Node
+      uses: actions/setup-node@v1
+      with:
+        node-version: 10.16.3    
+
+    - name: Install dependencies in client app
+      working-directory: ch9_release/src/Tailwind.Traders.Web/ClientApp
+      run: npm install
+
+    - name: Build and publish with dotnet
+      working-directory: ch9_release/src/Tailwind.Traders.Web
+      run: |
+        dotnet build --configuration Release
