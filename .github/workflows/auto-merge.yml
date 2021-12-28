@@ -16,8 +16,7 @@ jobs:
         with:
           github-token: "${{ secrets.GITHUB_TOKEN }}"
           
-      - name: Enable auto-merge for all patch versions
-        if: ${{ steps.dependabot-metadata.outputs.update-type == 'version-update:semver-patch' }}
+      - name: Enable auto-merge for all dependabot pr that pass ci
         run: gh pr merge --auto --merge "$PR_URL"
         env:
           PR_URL: ${{github.event.pull_request.html_url}}
