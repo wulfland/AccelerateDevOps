@@ -22,7 +22,7 @@
     "izitoast": "^1.4.0",
     "msal": "^1.4.15",
     "node-sass": "^7.0.1",
-    "office-ui-fabric-react": "^7.170.0",
+    "office-ui-fabric-react": "^7.180.2",
     "prop-types": "^15.8.0",
     "qs": "^6.10.2",
     "react": "^16.14.0",
