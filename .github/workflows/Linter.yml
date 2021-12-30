@@ -13,14 +13,9 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Run npm install
-        working-directory: ch14/TailwindTradersBotComposer/
-        run: |
-          npm install eslint --save-dev
-          npm install @microsoft/eslint-formatter-sarif --save-dev
-          node_modules/.bin/eslint --init
-          node_modules/.bin/eslint scripts -f node_modules/@microsoft/eslint-formatter-sarif/sarif.js -o results.sarif || true
-      
-      - uses: github/codeql-action/upload-sarif@v1
-        with:
-          sarif_file: results.sarif
+      - name: Lint Code Base
+        uses: github/super-linter@v4
+        env:
+          VALIDATE_ALL_CODEBASE: false
+          DEFAULT_BRANCH: main
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
