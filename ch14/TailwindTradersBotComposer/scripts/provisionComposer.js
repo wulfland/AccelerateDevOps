@@ -802,7 +802,7 @@ msRestNodeAuth
         runtimeIdentifier: 'win-x64',
       };
 
-      // console.log(chalk.white(JSON.stringify(profile, null, 2)));
+      console.log(chalk.white(JSON.stringify(profile, null, 2)));
 
       console.log('');
     }
