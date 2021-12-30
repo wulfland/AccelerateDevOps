@@ -17,6 +17,7 @@ jobs:
         working-directory: ch14/TailwindTradersBotComposer/
         run: |
           npm install eslint --save-dev
+          eslint --init
           npm install @microsoft/eslint-formatter-sarif --save-dev
           node_modules/.bin/eslint scripts -f node_modules/@microsoft/eslint-formatter-sarif/sarif.js -o results.sarif || true
       
