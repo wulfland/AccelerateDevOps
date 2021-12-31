@@ -30,7 +30,7 @@ jobs:
       uses: github/codeql-action/init@v1
       with:
         languages: ${{ matrix.language }}
-        queries:  security-and-quality security-extended
+        queries:  security-and-quality
         # queries: ./path/to/local/query, your-org/your-repo/queries@main
 
     - name: Set up .NET Core
