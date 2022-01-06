@@ -19,4 +19,9 @@ jobs:
       with:
         directory: ch15_sec/
         output_format: sarif
-        quiet: true
+        
+    - name: Upload SARIF file
+      uses: github/codeql-action/upload-sarif@v1
+      with:
+        sarif_file: results.sarif
+      if: always()
