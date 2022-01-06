@@ -1,0 +1,22 @@
+name: 'Checkov'
+
+on:
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+    
+jobs:
+  check_repo:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Checkov GitHub Action
+      uses: bridgecrewio/checkov-action@master
+      with:
+        directory: ch15_sec/
+        output_format: sarif
+        quiet: true
