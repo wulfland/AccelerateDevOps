@@ -15,3 +15,5 @@ jobs:
       with:
         path: ./ch9_release/src/Tailwind.Traders.Web.sln
         github-bearer-token: ${{ secrets.GITHUB_TOKEN }}
+        
+    - run: tree
