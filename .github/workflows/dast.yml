@@ -4,7 +4,7 @@ on: [workflow_dispatch]
 
 jobs:
   run:
-    runs-on: ubuntu-latests
+    runs-on: ubuntu-latest
     steps:
       - name: OWASP ZAP Full Scan
         uses: zaproxy/action-full-scan@v0.3.0
