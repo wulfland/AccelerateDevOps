@@ -1,0 +1,9 @@
+name: DAST Sample
+
+on: [workflow_dispatch]
+
+jobs:
+  run:
+    runs-on: ubuntu-latests
+    steps:
+      - run: echo "Hello World";
