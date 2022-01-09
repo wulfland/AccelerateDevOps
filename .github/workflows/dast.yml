@@ -6,4 +6,8 @@ jobs:
   run:
     runs-on: ubuntu-latests
     steps:
-      - run: echo "Hello World";
+      - name: OWASP ZAP Full Scan
+        uses: zaproxy/action-full-scan@v0.3.0
+        with:
+          target: https://xyz-demo-shop.azurewebsites.net/
+          
