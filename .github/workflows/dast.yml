@@ -4,6 +4,7 @@ on: [workflow_dispatch]
 
 env: 
   TARGET_URL: https://xyz-demo-shop.azurewebsites.net/
+  TARGET_API: https://xyz-demo-shop.azurewebsites.net/api
 
 jobs:
   run:
@@ -20,4 +21,9 @@ jobs:
         uses: zaproxy/action-full-scan@v0.3.0
         with:
           target: ${{ env.TARGET_URL }}
+          
+      - name: OWASP ZAP API Scan
+        uses: zaproxy/action-api-scan@v0.1.0
+        with:
+          target: ${{ env.TARGET_API }}
           
