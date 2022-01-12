@@ -49,4 +49,4 @@ jobs:
       with:
         app-name: ${{ secrets.APPNAME }}
         slot-name: Production
-        package: publish
+        package: ch9_release/src/Tailwind.Traders.Web/publish
