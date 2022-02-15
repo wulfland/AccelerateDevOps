@@ -16,6 +16,27 @@ You can normal links like https://www.google.com, set a [link text](https://goog
 
 You can also link to [other sections in the same file](#sourcecode)
 
+### Images and attachments
+
+Drag you images to markdown and they automatically get uploaded: 
+![octocat](https://user-images.githubusercontent.com/5276337/154123090-166819a4-fbf7-4022-a732-d3ed3692e913.png)
+
+You can format them using normal HTML:
+<img width="200" alt="Octoca" src="https://user-images.githubusercontent.com/5276337/154123090-166819a4-fbf7-4022-a732-d3ed3692e913.png">
+
+Other file types get uploaded as a link:
+[Test.pdf](https://github.com/wulfland/AccelerateDevOps/files/8073553/Test.pdf)
+
+You should use relative paths for images. Here are some examples:
+
+| Context	| Relative Link |
+|---------|---------------|
+| In a `.md` file on the same branch | `/assets/images/electrocat.png` |
+| In a `.md` file on another branch	| `/../main/assets/images/electrocat.png` | 
+| In issues, pull requests and comments of the repository	| `../blob/main/assets/images/electrocat.png` | 
+| In a .md file in another repository	| `/../../../../github/docs/blob/main/assets/images/electrocat.png` | 
+| In issues, pull requests and comments of another repository	| `../../../github/docs/blob/main/assets/images/electrocat.png?raw=true` |
+
 ### Sourcecode
 
 Source code can be `inline` or as blocks. Blocks can have syntaxhighlighting for many different languages.
