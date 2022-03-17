@@ -26,6 +26,7 @@ body:
       options:
         - 1.0.2 (Default)
         - 1.0.3 (Edge)
+        - 1.0.4 (Something)
     validations:
       required: true
   - type: dropdown
