@@ -60,6 +60,18 @@ jobs:
       - run: echo "🎯 environment is `${{ github.event.inputs.environment }}`."
       - run: echo "📖 log level is `${{ github.event.inputs.logLevel }}`."
       - run: echo "➿ Run the matrix? `${{ github.event.inputs.run_matrix }}`."
+      
+      - name: Build and test solution
+        run: |
+          for root, dirs, files in os.walk('.'):
+            level = root.replace(startpath, '').count(os.sep)
+            indent = ' ' * 4 * (level)
+            print('{}{}/'.format(indent, os.path.basename(root)))
+            subindent = ' ' * 4 * (level + 1)
+          for f in files:
+            print('{}{}'.format(subindent, f))
+        working-directory: ./docs
+        shell: python
   
   job_2:
     runs-on: ubuntu-latest
@@ -82,7 +94,7 @@ jobs:
   matrix_job:
     name: matrix-job
     runs-on: ${{ matrix.runner }}
-    if: github.event.inputs.run_matrix == true
+    if: github.event.inputs.run_matrix == 'true'
     
     strategy:
       matrix: 
