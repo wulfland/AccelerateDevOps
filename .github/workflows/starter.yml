@@ -65,6 +65,7 @@ jobs:
         run: |
           echo "List all documentation:"
           tree
+        working-directory: ch9_release/src/Tailwind.Traders.Web
         # working-directory: docs/
         # shell: bash
   
