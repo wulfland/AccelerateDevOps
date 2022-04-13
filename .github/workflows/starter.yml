@@ -171,6 +171,4 @@ jobs:
           echo "::group::Writing to the log"
           echo "::notice file=starter.yml,line=169,col=19,endColumn=22::Writing a notice"
           echo "::warning file=starter.yml,line=171,col=19,endColumn=22::Writing a warning"
-          echo "Write a masked variable:"
-          echo "::add-mask::$MY_ENV"
           echo "::endgroup::"
