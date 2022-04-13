@@ -1,2 +1,17 @@
 # This is a comment in yaml
 
+# Scalar types:
+key: value
+
+# Data types:
+integer: 42
+float: 42.0
+string: a text value
+boolean: true
+null value: null
+datetime: 1999-12-31T23:59:43.1Z
+
+# Keys and values can contain spaces and do not need quotation. 
+# You can quote both with single or double quotes:
+'single quotes': 'have ''one quote'' as the escape pattern'
+"double quotes": "have the \"backslash \" escape pattern"
