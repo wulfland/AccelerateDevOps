@@ -132,3 +132,24 @@ jobs:
       - name: Dump env context
         run: echo '${{ toJSON(env) }}'
 
+  expression_job:
+    runs-on: ubuntu-latest
+    name: Expressions
+    if: ${{ github.ref == 'refs/heads/main' && github.event.inputs.logLevel == 'debug' }}
+    
+    steps:
+      - run: echo "Only run if triggered by main branch..."
+        if: contains(github.ref, 'main')
+
+      - run: |
+          echo "Fail depending on parameter"
+          return 1
+        if: github.event.inputs.run_matrix == 'true'
+        
+      - run: echo "Run always"
+        if: always()
+      - run: echo "Run only on success"
+        if: success()
+      - run: echo "Run only on failure"
+        if: failure()
+      
