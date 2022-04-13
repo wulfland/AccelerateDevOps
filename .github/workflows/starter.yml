@@ -10,8 +10,8 @@ on:
     
   # Scheduled events
   schedule:
-    - cron: '*/15 * * * *'
-    - cron: '0 9-17 * * *'
+    # - cron: '*/15 * * * *'
+    # - cron: '0 9-17 * * *'
     - cron: '11 11 * * 5'
 
   # Manual events
@@ -56,6 +56,7 @@ jobs:
       - run: echo "🎉 The job was triggered by a ${{ github.event_name }} event."
       - run: echo "🏠 drive is `${{ github.event.inputs.homedrive }}`."
       - run: echo "🎯 environment is `${{ github.event.inputs.environment }}`."
+      - run: echo "🎯 log level is `${{ github.event.inputs.logLevel }}`."
       
   matrix_job:
     name: matrix-job
@@ -68,5 +69,5 @@ jobs:
         node: [10,12]
     
     steps:
-      - run: echo "${{ matrix.configuration }}"
+      - run: echo "${{ matrix.runner }}"
       - run: echo "${{ matrix.node }}"
