@@ -127,5 +127,5 @@ jobs:
       - name: Dump runner context
         run: echo '${{ toJSON(runner) }}'
       - name: Dump env context
-        run: echo '${{ toJSON(env) }}
+        run: echo '${{ toJSON(env) }}'
 
