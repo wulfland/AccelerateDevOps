@@ -159,15 +159,11 @@ jobs:
     
     steps:
       - name: Set time
-        run: |
-          time=$(date)
-          echo '::set-output name=my_time::$time'
+        run: echo '::set-output name=my_time::$(date)'
         id: set-time
         
       - name: Output time
-        run: echo "It was $time in the other step."
-        env: 
-          time: ${{ steps.set-time.outputs.MY_TIME }}
+        run: echo "It was ${{ steps.set-time.outputs.my_time }} in the previous step."
         
       - name: Writing to the workflow log
         run: |
