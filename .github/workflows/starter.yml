@@ -65,7 +65,8 @@ jobs:
         run: |
           echo "List all documentation:"
           tree
-        working-directory: docs/
+        # working-directory: docs/
+        # shell: bash
   
   job_2:
     runs-on: ubuntu-latest
