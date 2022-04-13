@@ -64,8 +64,13 @@ jobs:
       - name: Get OS information
         run: |
           import platform
-          platform.platform()
+          print(platform.platform())
         shell: python
+        
+      - uses: actions/checkout@v3.0.0
+      - name: Display documentation
+        run: tree
+        working-directory: docs
   
   job_2:
     runs-on: ubuntu-latest
