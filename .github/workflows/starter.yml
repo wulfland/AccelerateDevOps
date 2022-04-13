@@ -72,8 +72,10 @@ jobs:
       #- uses: actions/checkout@v3
       #- uses: actions/checkout@main
       
-      - name: Run a docker contaier as an action
+      - name: Run a docker containers as an action
         uses: docker://alpine:3.8
+        
+      - uses: docker://ghcr.io/wulfland/container-demo:latest
       
       - name: Display documentation
         run: tree
