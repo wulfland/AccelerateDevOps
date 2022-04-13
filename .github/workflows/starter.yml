@@ -82,7 +82,7 @@ jobs:
   matrix_job:
     name: matrix-job
     runs-on: ${{ matrix.runner }}
-    if: github.event.inputs.run_matrix
+    if: github.event.inputs.run_matrix == true
     
     strategy:
       matrix: 
