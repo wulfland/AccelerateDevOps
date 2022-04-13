@@ -61,13 +61,11 @@ jobs:
       - run: echo "📖 log level is `${{ github.event.inputs.logLevel }}`."
       - run: echo "➿ Run the matrix? `${{ github.event.inputs.run_matrix }}`."
       
-      - name: Display Doc
+      - name: Get OS information
         run: |
-          echo "List all documentation:"
-          tree
-        working-directory: ../ch9_release/src/Tailwind.Traders.Web
-        # working-directory: docs/
-        # shell: bash
+          import platform
+          platform.platform()
+        shell: python
   
   job_2:
     runs-on: ubuntu-latest
