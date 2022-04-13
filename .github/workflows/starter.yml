@@ -4,7 +4,9 @@ on:
   # Webhook events
   push:
     branches: 
-      - main
+      - 'release/*'
+    paths-ignore: 
+      - '.github/workflows'
   issues:
     types: [opened, edited, milestoned]
     
@@ -57,7 +59,19 @@ jobs:
       - run: echo "🏠 drive is `${{ github.event.inputs.homedrive }}`."
       - run: echo "🎯 environment is `${{ github.event.inputs.environment }}`."
       - run: echo "🎯 log level is `${{ github.event.inputs.logLevel }}`."
+  
+  job_2:
+    runs-on: ubuntu-latest
+    needs: job_1
+    steps:
+      - run: echo "Status ${{ job.status }}"
       
+  job_3:
+    runs-on: ubuntu-latest
+    needs: [job_1, job_2]
+    steps:
+      - run: echo "Status ${{ job.status }}"
+  
   matrix_job:
     name: matrix-job
     runs-on: ${{ matrix.runner }}
@@ -67,6 +81,8 @@ jobs:
       matrix: 
         runner: [ubuntu-18.04, ubuntu-20.04]
         node: [10,12]
+      fail-fast: true
+      max-parallel: 4
     
     steps:
       - run: echo "${{ matrix.runner }}"
