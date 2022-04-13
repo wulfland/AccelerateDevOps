@@ -161,12 +161,13 @@ jobs:
       - name: Set time
         run: |
           time=$(date)
-          echo '::set-output name=MY_TIME::$time'
-          echo $time
-        id: time-gen
+          echo '::set-output name=my_time::$time'
+        id: set-time
         
       - name: Output time
-        run: echo "It is ${{ steps.time-gen.outputs.MY_TIME }}"
+        run: echo "It was $time in the other step."
+        env: 
+          time: ${{ steps.set-time.outputs.MY_TIME }}
         
       - name: Writing to the workflow log
         run: |
