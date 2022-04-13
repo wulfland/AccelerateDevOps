@@ -67,7 +67,14 @@ jobs:
           print(platform.platform())
         shell: python
         
-      - uses: actions/checkout@v3.0.0
+      - uses: actions/checkout@a12a3943b4bdde767164f792f33f40b04645d846
+      #- uses: actions/checkout@v3.0.0
+      #- uses: actions/checkout@v3
+      #- uses: actions/checkout@main
+      
+      - name: Run a docker contaier as an action
+        uses: docker://alpine:3.8
+      
       - name: Display documentation
         run: tree
         working-directory: docs
