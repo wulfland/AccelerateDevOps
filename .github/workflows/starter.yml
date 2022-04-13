@@ -163,11 +163,16 @@ jobs:
           time=$(date)
           echo '::set-output name=MY_TIME::$time'
         id: time-gen
+        
       - name: Output time
         run: echo "It is ${{ steps.time-gen.outputs.MY_TIME }}"
-      - run: |
+        
+      - name: Writing to the workflow log
+        env: 
+          MYSECRET: $MY_ENV
+        run: |
           echo "::group::Writing to the log"
           echo "::notice file=.github/workflows/starter.yml,line=169,col=19,endColumn=22::Writing a notice"
           echo "::warning file=.github/workflows/starter.yml,line=171,col=19,endColumn=22::Writing a warning"
-          echo "::add-mask::A secret string"
+          echo "::add-mask::$MYSECRET"
           echo "::endgroup::"
