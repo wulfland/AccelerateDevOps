@@ -8,7 +8,7 @@ on:
     paths-ignore: 
       - '.github/workflows'
   issues:
-    types: [opened, edited, milestoned]
+    types: [opened]
     
   # Scheduled events
   schedule:
@@ -52,6 +52,10 @@ on:
 
 env:
   MY_ENV: A value availbale as environment variable
+
+permissions:
+  contents: read
+  issues: write
 
 jobs:
   job_1:
@@ -172,3 +176,13 @@ jobs:
           echo "::notice file=starter.yml,line=169,col=19,endColumn=22::Writing a notice"
           echo "::warning file=starter.yml,line=171,col=19,endColumn=22::Writing a warning"
           echo "::endgroup::"
+          
+  label_issues:
+    runs-on: ubuntu-latest
+    if: github.event_name == issue
+    
+    steps:
+      - uses: andymckay/labeler@e6c4322d0397f3240f0e7e30a33b5c5df2d39e90
+        with:
+          add-labels: documentation
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
