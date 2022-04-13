@@ -51,3 +51,4 @@ jobs:
       - run: echo "🎉 The job was triggered by a ${{ github.event_name }} event."
       - run: echo "🏠 drive is `${{ github.event.inputs.homedrive }}`."
       - run: echo "🎯  drive is `${{ github.event.inputs.environment }}`."
+      - run: echo "${{ github.event.client_payload"
