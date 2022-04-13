@@ -50,6 +50,9 @@ on:
   # /repos/wulfland/AccelerateDevOps/dispatches \
   # -f event_type=customEvent
 
+env:
+  MY_ENV: A value availbale as environment variable
+
 jobs:
   job_1:
     runs-on: ubuntu-latest
