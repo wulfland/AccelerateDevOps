@@ -59,6 +59,7 @@ jobs:
       - run: echo "🏠 drive is `${{ github.event.inputs.homedrive }}`."
       - run: echo "🎯 environment is `${{ github.event.inputs.environment }}`."
       - run: echo "🎯 log level is `${{ github.event.inputs.logLevel }}`."
+      - run: echo "${{ github.event.inputs.run_matrix }}`."
   
   job_2:
     runs-on: ubuntu-latest
@@ -68,7 +69,13 @@ jobs:
       
   job_3:
     runs-on: ubuntu-latest
-    needs: [job_1, job_2]
+    needs: job_1
+    steps:
+      - run: echo "Status ${{ job.status }}"
+      
+  job_4:
+    runs-on: ubuntu-latest
+    needs: [job_2, job_3]
     steps:
       - run: echo "Status ${{ job.status }}"
   
