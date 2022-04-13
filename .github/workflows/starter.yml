@@ -1,0 +1,36 @@
+name: Starter Workflow
+
+on:
+  # Webhook events
+  push:
+    branches: 
+      - main
+  issues:
+    types: [opened, edited, milestoned]
+    
+  # Scheduled events
+  
+  
+  
+  schedule:
+    - cron: '*/15 * * * *'
+    - cron: '0 9-17 * * *'
+    - cron: '11 11 * * 5'
+
+  # Manual events
+  workflow_dispatch:
+    inputs:
+      homedrive:
+        description: 'The home drive on the machine'
+        required: true
+        default: '/home'
+
+  # 
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - run: echo "🎉 The job was triggered by a ${{ github.event_name }} event."
+      - run: echo "🏠 drive is `${{ github.event.inputs.homedrive }}`."
