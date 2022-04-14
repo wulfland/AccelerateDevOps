@@ -4,14 +4,14 @@ on: [workflow_dispatch]
 
 jobs:
   job1:
-    concurrency: ci-${{ github.ref }}
+    concurrency: group1
     runs-on: ubuntu-latest
     steps:
       - run: sleep 60
       - run: echo "Hello World! $(date)"
    
   job2:
-    concurrency: ci-${{ github.ref }}
+    concurrency: group1
     runs-on: ubuntu-latest
     steps:
       - run: sleep 60
@@ -19,7 +19,7 @@ jobs:
       
   job3:
     concurrency:
-      group: prod-${{ github.ref }}
+      group: group2
       cancel-in-progress: true
       
     runs-on: ubuntu-latest
@@ -29,7 +29,7 @@ jobs:
       
   job4:
     concurrency:
-      group: prod-${{ github.ref }}
+      group: group2
       cancel-in-progress: true
       
     runs-on: ubuntu-latest
