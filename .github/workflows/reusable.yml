@@ -16,11 +16,9 @@ on:
 jobs:
   reusable-job:
     runs-on: ubuntu-latest
-    
     steps:
       - name: Greet someone
         run: Hello ${{ inputs.who-to-greet }}
-
       - name: Set time
         id: time
         run: echo "::set-output current-time=$(date)"
