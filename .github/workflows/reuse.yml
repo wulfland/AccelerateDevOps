@@ -4,6 +4,6 @@ on: [workflow_dispatch]
 
 jobs:
   call-workflow:
-    uses: ./reusable.yml
+    uses: ./.github/workflows/reusable.yml
     with: 
       who-to-greet: '@wulfland'
