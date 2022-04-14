@@ -11,15 +11,17 @@ on:
     outputs:
       current-time:
         description: 'The time when greeting.'
-        value: ${{ steps.time.outputs.current-time }}
+        value: ${{ jobs.reusable-job.outputs.current-time }}
         
 jobs:
   reusable-job:
     runs-on: ubuntu-latest
+    outputs:
+      current-time: ${{ steps.time.outputs.current-time }}
     steps:
       - name: Greet someone
         run: Hello ${{ inputs.who-to-greet }}
       - name: Set time
         id: time
-        run: echo "::set-output current-time=$(date)"
+        run: echo "::set-output name=current-time::$(date)"
 
