@@ -7,12 +7,14 @@ jobs:
     concurrency: ci-${{ github.ref }}
     runs-on: ubuntu-latest
     steps:
+      - run: sleep 60
       - run: echo "Hello World! $(date)"
    
   job2:
     concurrency: ci-${{ github.ref }}
     runs-on: ubuntu-latest
     steps:
+      - run: sleep 60
       - run: echo "Hello World! $(date)"
       
   job3:
@@ -22,6 +24,7 @@ jobs:
       
     runs-on: ubuntu-latest
     steps:
+      - run: sleep 60
       - run: echo "Hello World! $(date)"
       
   job4:
@@ -31,4 +34,5 @@ jobs:
       
     runs-on: ubuntu-latest
     steps:
+      - run: sleep 60
       - run: echo "Hello World! $(date)"
