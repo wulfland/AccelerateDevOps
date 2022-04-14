@@ -1,0 +1,34 @@
+name: Concurrency
+
+on: [workflow_dispatch]
+
+jobs:
+  job1:
+    concurrency: ci-${{ github.ref }}
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello World! $(date)"
+   
+  job2:
+    concurrency: ci-${{ github.ref }}
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello World! $(date)"
+      
+  job3:
+    concurrency:
+      group: prod-${{ github.ref }}
+      cancel-in-progress: true
+      
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello World! $(date)"
+      
+  job4:
+    concurrency:
+      group: prod-${{ github.ref }}
+      cancel-in-progress: true
+      
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello World! $(date)"
