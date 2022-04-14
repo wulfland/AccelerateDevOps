@@ -1,0 +1,9 @@
+name: Reuse other workflow
+
+on: [workflow_dispatch]
+
+jobs:
+  call-workflow:
+    uses: ./reusable.yml
+    with: 
+      who-to-greet: '@wulfland'
