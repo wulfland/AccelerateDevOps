@@ -45,6 +45,9 @@ jobs:
       url: https://writeabout.net
     needs: Staging
     steps:
-    - name: Deploy app
-      run: echo "Deploying..."
+    - run: echo "Step 1..."
+    - run: echo "Step 2..."
+    - run: sleep 30
+    - run: echo "Step 4..."
+    - run: echo "Step 5..."
     
