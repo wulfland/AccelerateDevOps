@@ -19,8 +19,8 @@ jobs:
     - name: Generate Prime Numbers
       if: steps.cache-primes.outputs.cache-hit != 'true'
       run: |
-        sleep 15
+        sleep 45
         echo "1 2 3..." > prime-numbers
 
     - name: Use Prime Numbers
-      run: echo prime-numbers
+      run: cat prime-numbers
