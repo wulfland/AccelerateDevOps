@@ -13,14 +13,14 @@ jobs:
       id: cache-primes
       uses: actions/cache@v3
       with:
-        path: prime-numbers
+        path: primes
         key: ${{ runner.os }}-primes
 
     - name: Generate Prime Numbers
       if: steps.cache-primes.outputs.cache-hit != 'true'
       run: |
-        sleep 45
-        echo "1 2 3..." > prime-numbers
+        sleep 60
+        echo "1 2 3..." > primes
 
     - name: Use Prime Numbers
-      run: cat prime-numbers
+      run: cat primes
