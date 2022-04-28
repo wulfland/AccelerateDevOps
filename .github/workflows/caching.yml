@@ -1,6 +1,6 @@
-name: Caching Primes
+name: Caching
 
-on: push
+on: [workflow_dispatch]
 
 jobs:
   build:
@@ -18,7 +18,9 @@ jobs:
 
     - name: Generate Prime Numbers
       if: steps.cache-primes.outputs.cache-hit != 'true'
-      run: /generate-primes.sh -d prime-numbers
+      run: |
+        sleep 120
+        "1 2 3..." > prime-numbers
 
     - name: Use Prime Numbers
-      run: /primes.sh -d prime-numbers
+      run: echo prime-numbers
