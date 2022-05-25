@@ -4,7 +4,7 @@ on: [workflow_dispatch]
 
 jobs:
   write-summary:
-    runs-on: ubtuntu-latest
+    runs-on: ubuntu-latest
   
     steps: 
       - run: echo '### Hello world! :rocket:' >> $GITHUB_STEP_SUMMARY
