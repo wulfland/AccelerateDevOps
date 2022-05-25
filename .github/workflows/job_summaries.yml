@@ -1,0 +1,9 @@
+name: Job Summaries
+
+on: [workflow_dispatch]
+
+jobs:
+  runs-on: ubtuntu-latest
+  
+  steps: 
+    - run: echo '### Hello world! :rocket:' >> $GITHUB_STEP_SUMMARY
