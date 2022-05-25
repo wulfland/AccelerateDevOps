@@ -18,7 +18,6 @@ jobs:
         uses: actions/github-script@v6.1.0
         with:
           script: |
-            import * as core from '@actions/core' 
             await core.summary
             .addHeading('Test Results')
             .addCodeBlock(generateTestResults(), "js")
@@ -30,4 +29,3 @@ jobs:
             ])
             .addLink('View staging deployment!', 'https://github.com')
             .write()
-          
