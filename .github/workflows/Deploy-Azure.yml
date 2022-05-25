@@ -34,7 +34,7 @@ jobs:
         dotnet publish -c Release -o publish
         
     - name: Upload Artifact
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
         name: website
         path: ch9_release/src/Tailwind.Traders.Web/publish
