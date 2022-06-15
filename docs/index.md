@@ -6,6 +6,8 @@ This is the the homepage `index.md` of the type `home`. `Pages` are displayed in
 
 Use the following page header for the homepage:
 
+Test codeowners
+
 ```markdown
 ---
 layout: home
