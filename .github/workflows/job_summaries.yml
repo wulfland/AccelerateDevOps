@@ -1,0 +1,30 @@
+name: Job Summaries
+
+on: [workflow_dispatch]
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+  
+    steps: 
+      - run: echo '### Hello world! :rocket:' >> $GITHUB_STEP_SUMMARY
+      - run: echo '### Love this feature! :medal_sports:' >> $GITHUB_STEP_SUMMARY
+
+  job2:
+    runs-on: ubuntu-latest
+  
+    steps: 
+      - name: Write Summary from Action
+        uses: actions/github-script@v6.1.0
+        with:
+          script: |
+            await core.summary
+            .addHeading('Test Results')
+            .addTable([
+              [{data: 'File', header: true}, {data: 'Result', header: true}],
+              ['foo.js', 'Pass ✅'],
+              ['bar.js', 'Fail ❌'],
+              ['test.js', 'Pass ✅']
+            ])
+            .addLink('View staging deployment!', 'https://github.com')
+            .write()

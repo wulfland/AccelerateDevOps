@@ -1,0 +1,29 @@
+name: DAST Sample
+
+on: [workflow_dispatch]
+
+env: 
+  TARGET_URL: https://xyz-demo-shop.azurewebsites.net/
+  TARGET_API: https://xyz-demo-shop.azurewebsites.net/api
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: ZAP Scan
+        uses: zaproxy/action-baseline@v0.6.1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          docker_name: 'owasp/zap2docker-stable'
+          target: ${{ env.TARGET_URL }}
+          
+      - name: OWASP ZAP Full Scan
+        uses: zaproxy/action-full-scan@v0.3.0
+        with:
+          target: ${{ env.TARGET_URL }}
+          
+      - name: OWASP ZAP API Scan
+        uses: zaproxy/action-api-scan@v0.1.0
+        with:
+          target: ${{ env.TARGET_API }}
+          

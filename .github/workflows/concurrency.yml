@@ -1,0 +1,38 @@
+name: Concurrency
+
+on: [workflow_dispatch]
+
+jobs:
+  job1:
+    concurrency: group1
+    runs-on: ubuntu-latest
+    steps:
+      - run: sleep 60
+      - run: echo "Hello World! $(date)"
+   
+  job2:
+    concurrency: group1
+    runs-on: ubuntu-latest
+    steps:
+      - run: sleep 60
+      - run: echo "Hello World! $(date)"
+      
+  job3:
+    concurrency:
+      group: group2
+      cancel-in-progress: true
+      
+    runs-on: ubuntu-latest
+    steps:
+      - run: sleep 60
+      - run: echo "Hello World! $(date)"
+      
+  job4:
+    concurrency:
+      group: group2
+      cancel-in-progress: true
+      
+    runs-on: ubuntu-latest
+    steps:
+      - run: sleep 60
+      - run: echo "Hello World! $(date)"

@@ -1,0 +1,52 @@
+name: OpenID Connect
+
+on: [workflow_dispatch]
+
+permissions:
+      id-token: write
+      contents: read
+
+jobs:
+  build-and-deploy:
+    name: Build and Deploy
+    runs-on: ubuntu-latest
+    environment: Prod
+
+    steps:
+    
+    - name: 'Checkout Github Action'
+      uses: actions/checkout@v3
+
+    - name: Set up .NET Core
+      uses: actions/setup-dotnet@v2
+      with:
+        dotnet-version: '5.0.x'
+
+    - name: Setup Node
+      uses: actions/setup-node@v2.5.1
+      with:
+        node-version: 10.16.3    
+
+    - name: Install dependencies in client app
+      working-directory: ch9_release/src/Tailwind.Traders.Web/ClientApp
+      run: npm install
+
+    - name: Build and publish with dotnet
+      working-directory: ch9_release/src/Tailwind.Traders.Web
+      run: |
+        dotnet build --configuration Release
+        dotnet publish -c Release -o publish
+
+    - name: 'Az CLI login'
+      uses: azure/login@v1
+      with:
+          client-id: ${{ secrets.AZURE_CLIENT_ID }}
+          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+  
+    - name: Run Azure webapp deploy action using publish profile credentials
+      uses: azure/webapps-deploy@v2
+      with:
+        app-name: ${{ secrets.APPNAME }}
+        slot-name: Production
+        package: ch9_release/src/Tailwind.Traders.Web/publish

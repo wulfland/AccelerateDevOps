@@ -1,0 +1,23 @@
+name: Generate SBOM
+
+on: [workflow_dispatch]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v3
+
+    - name: CycloneDX .NET Generate SBOM
+      uses: CycloneDX/gh-dotnet-generate-sbom@v1.0.1
+      with:
+        path: ./ch9_release/src/Tailwind.Traders.Web.sln
+        github-bearer-token: ${{ secrets.GITHUB_TOKEN }}
+        
+    - name: Upload a Build Artifact
+      uses: actions/upload-artifact@v2.3.1
+      with:
+        path: bom.xml
+    

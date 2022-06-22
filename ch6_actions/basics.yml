@@ -1,0 +1,47 @@
+# This is a comment in yaml
+
+# Scalar types:
+key: value
+
+# Data types:
+integer: 42
+float: 42.0
+string: a text value
+boolean: true
+null value: null
+datetime: 1999-12-31T23:59:43.1Z
+
+# Keys and values can contain spaces and do not need quotation. 
+# You can quote both with single or double quotes:
+'single quotes': 'have ''one quote'' as the escape pattern'
+"double quotes": "have the \"backslash \" escape pattern"
+
+# Literal blocks:
+literal_block: |
+    Text blocks use 4 spaces as indentation. The entire 
+    block is assigned to the key 'literal_block' and keeps
+    line breaks and empty lines.
+
+    The block continuous until the next element.
+
+# Collection types
+
+# Maps
+# Maps use 2 spaces of indentation:
+nested_type:
+  key1: value1
+  key2: value2
+  another_nested_type:
+    key1: value1
+
+#JSON syntax:
+map: {key: value}
+
+# Sequence
+# Uses a dash before each item:
+sequence:
+  - item1
+  - item2
+
+#JSON syntax:
+sequence: [item1, item2, item3]

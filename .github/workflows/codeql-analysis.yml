@@ -3,6 +3,8 @@ name: "CodeQL"
 on:
   push:
     branches: [ main ]
+    paths-ignore:
+      - '.github/**'
   pull_request:
     branches: [ main ]
   schedule:
@@ -24,21 +26,22 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
 
     - name: Initialize CodeQL
       uses: github/codeql-action/init@v1
       with:
         languages: ${{ matrix.language }}
+        queries:  security-and-quality
         # queries: ./path/to/local/query, your-org/your-repo/queries@main
 
     - name: Set up .NET Core
-      uses: actions/setup-dotnet@v1
+      uses: actions/setup-dotnet@v2
       with:
         dotnet-version: '5.0.x'
 
     - name: Setup Node
-      uses: actions/setup-node@v2.5.0
+      uses: actions/setup-node@v2.5.1
       with:
         node-version: 10.16.3  
 

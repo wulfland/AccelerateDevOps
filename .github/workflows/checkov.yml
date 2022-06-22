@@ -1,0 +1,24 @@
+name: 'Checkov'
+
+on:
+  workflow_dispatch:
+    
+jobs:
+  check_repo:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+
+    - name: Checkov GitHub Action
+      uses: bridgecrewio/checkov-action@master
+      with:
+        directory: ch15_sec/
+        output_format: sarif
+        
+    - name: Upload SARIF file
+      uses: github/codeql-action/upload-sarif@v1
+      with:
+        sarif_file: results.sarif
+      if: always()
