@@ -1,4 +1,27 @@
-# AccelerateDevOps
+# Accelerate DevOps with GitHub
+
+**Enhance Software Delivery Performance with GitHub Issues, Projects, Actions, and Advanced Security**
+
+## Part 1: Lean Management and Collaboration
+
+In Part 1 you will learn how to reduce ballast from your development process and move to a lean and collaborative way of working that allows your teams to accelerate their value delivery. You’ll learn how to use GitHub to work together from everywhere effectively and use work insights and the right metrics to optimize your engineering productivity.
+
+### Chapter 1: Metrics that Matter
+
+- Srivastava S., Trehan K., Wagle D. & Wang J. (April 2020). [Developer Velocity: How software excellence fuels business performance]( https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-insights/developer-velocity-how-software-excellence-fuels-business-performance).
+- Forsgren N., Smith D., Humble J., Frazelle J. (2019). [DORA State of DevOps Report](https://www.devops-research.com/research.html#reports)
+- Brown A., Stahnke M. & Kersten N. (2020). [2020 State of DevOps Report](https://puppet.com/resources/report/2020-state-of-devops-report/)
+- Forsgren N., Humble, J., & Kim, G. (2018). Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations (1st ed.) [E-book]. IT Revolution Press.
+- Coupland M (2021). DevOps Adoption Strategies: Principles, Processes, Tools, and Trends: Embracing DevOps through effective culture people, and processes (1st ed.) [E-book]. Packt.
+- To read more on the four key project: [Dina Graves Portman2020 Are you an Elite DevOps performer? Find out with the Four Keys Project]( https://cloud.google.com/blog/products/devops-sre/using-the-four-keys-to-measure-your-devops-performance)
+- Forsgren N., Storey M.-A., Maddila C., Zimmermann T., Houck B., & Butler J. (2021). [The SPACE of Developer Productivity]( https://queue.acm.org/detail.cfm?id=3454124)
+- Grove, A. S. (1983). High Output Management (1st ed.). Random House Inc.
+- Grove, A. S. (1995). High Output Management (2nd ed.). Vintage.
+- Doerr, J. (2018). Measure What Matters: OKRs: The Simple Idea that Drives 10x Growth. Portfolio Penguin
+
+### Chapter 2: Plan, Track, and Visualize Your Work
+
+
 
 ## Azure Boards integration
 
