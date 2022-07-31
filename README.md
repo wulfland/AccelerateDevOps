@@ -82,7 +82,7 @@ The following are the core topics that we will cover in this chapter:
 -	Finishing pull request
 -	Best practices for code reviews
 
-Hand-on exercices ✋
+Hands-on exercices: ✋
 
 1. [Create a pull request](ch3_pull-request/Create-PullRequest.md)
 2. [Review Changes](ch3_pull-request/Review-Changes.md)
@@ -165,6 +165,34 @@ The chapter will cover:
 - Ahlawat P., Boyne J., Herz D., Schmieg F., & Stephan M. (2021). [Why You Need an Open Source Software Strategy](https://www.bcg.com/publications/2021/open-source-software-strategy-benefits) 
 - [Inner Source](https://en.wikipedia.org/wiki/Inner_source) 
 - [GitHub Sponsors](https://github.com/sponsors) 
+
+</details>
+
+## Part 2: Engineering DevOps Practices
+
+Part 2 explains the most important engineering practices for effective DevOps. You’ll learn how to use GitHub Actions to automate your release pipelines and other engineering tasks, how to work trunk-based and with feature-flags and how to shift left security and quality assurance.
+
+### Chapter 6: Automation with GitHub Actions
+
+This chapter explains the importance of automation for quality and speed. It introduces you to GitHub Actions and how you can use them for any kind of automation – not only continuous delivery.
+
+- Overview of GitHub Actions 
+- Workflows, pipelines, and actions
+- [YAML](https://yaml.org/) basics
+- The workflow syntax
+- Working with secrets
+- ✋ Hands-on: [Your first workflow](https://github.com/wulfland/getting-started)
+- ✋ Hands-on: [Your first action](https://github.com/actions/container-action
+
+<details><summary>References and Links</summary>
+
+- Humble J., & Farley, D. (2010). Continuous Delivery: Reliable Software Releases through Build, Test, and Deployment Automation. Addison-Wesley Professional.
+- Forsgren N., Humble, J., & Kim, G. (2018). Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations (1st ed.) [E-book]. IT Revolution Press.
+- [YAML](https://yaml.org/)
+- [GitHub Actions](https://docs.github.com/en/actions)
+- [GitHub Learning Lab](https://lab.github.com)
+- [Workflow syntax](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions)
+- [GitHub Marketplace](https://github.com/marketplace)
 
 </details>
 
