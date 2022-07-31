@@ -267,3 +267,26 @@ The chapter will cover:
 - [Four Keys Project](https://github.com/GoogleCloudPlatform/fourkeys/)
 
 </details>
+
+### Chapter 10: Feature Flags and the Feature Lifecycle
+
+This chapter explains how Feature Flags – or Feature Toggles - can help you to reduce complexity and manage the lifecycle of features and your software.The main topics of this chapter are:
+- What are Feature Flags
+- The lifecycle of features
+- The benefits of Feature Flags
+- Getting started with Feature Flags
+- Feature Flags and technical debt
+- Experimentation with Feature Flags
+
+<details><summary>References and Links</summary>
+
+- Martin Fowler (2017). [Feature-Toggles (aka Feature Flags)](https://martinfowler.com/articles/feature-toggles.html) 
+- [Comparison of Feature Flag Solutions](https://wulfland.github.io/FeatureFlags/)
+- [LaunchDarkly](https://launchdarkly.com/)
+- [Switchover](https://switchover.io/)
+- [VWO](https://vwo.com/)
+- [Split](https://www.split.io/)
+- [Flagship](https://www.flagship.io/)
+- [Unleash](https://www.getunleash.io/) and [on GitHub](https://github.com/Unleash/unleash)
+
+</details>
