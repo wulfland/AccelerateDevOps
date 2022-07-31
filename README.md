@@ -378,4 +378,31 @@ The key points that we will cover in this chapter are:
 
 ### Chapter 14, Securing Your Code
 
+This chapter describes how you can use GitHub Advanced Security to eliminate bugs, security, and compliance issues by performing static code analysis with CodeQL and other tools, successfully manage your software supply chain with Dependabot, and eliminate secrets in your code base using Secret Scanning.
+
+The key topics in this chapter are:
+- Dependency management and Dependabot
+- Automate dependabot with GitHub Actions (see [auto-merge.yml](.github/workflows/auto-merge.yml) and [dependabot.yml](.github/dependabot.yml)) 
+- Secret Scanning
+- [Code Scanning](.github/workflows/codeql-analysis.yml)
+- Writing your own CodeQL queries
+
+<details><summary>References and Links</summary>
+
+- Keith Collins (2016). [How one programmer broke the internet by deleting a tiny piece of code](https://qz.com/646467/how-one-programmer-broke-the-internet-by-deleting-a-tiny-piece-of-code/).
+- Tyler Eon (2016). [Kik, Left-Pad, and NPM — Oh My!](https://medium.com/@kolorahl/kik-left-pad-and-npm-oh-my-e6f216a22766)
+- Maya Kaczorowski (2020). [Secure at every step: What is software supply chain security and why does it matter?](https://github.blog/2020-09-02-secure-your-software-supply-chain-and-protect-against-supply-chain-threats-github-blog/)
+- [About the dependency graph](https://docs.github.com/en/code-security/supply-chain-security/understanding-your-software-supply-chain/about-the-dependency-graph).
+- [About dependabot version updates](https://docs.github.com/en/code-security/supply-chain-security/keeping-your-dependencies-updated-automatically/about-dependabot-version-updates).
+- [About secret scanning](https://docs.github.com/en/code-security/secret-scanning/about-secret-scanning).
+- [About GitHub Advanced Security](https://docs.github.com/en/get-started/learning-about-github/about-github-advanced-security).
+- [About Code Scanning](https://docs.github.com/en/code-security/code-scanning/automatically-scanning-your-code-for-vulnerabilities-and-errors/about-code-scanning).
+- GitHub Blog (2021). [CodeQL code scanning: new severity levels for security alerts](https://github.blog/changelog/2021-07-19-codeql-code-scanning-new-severity-levels-for-security-alerts/).
+- [Common Vulnerability Scoring System (CVSS)](https://www.first.org/cvss/v3.1/specification-document)
+- [CodeQL documentation](https://codeql.github.com/docs/)
+- [CodeQL Language Reference](https://codeql.github.com/docs/ql-language-reference)
+
+</details>
+
+
 ### Chapter 15, Securing Your Deployments
