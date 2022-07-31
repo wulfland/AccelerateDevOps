@@ -290,3 +290,26 @@ This chapter explains how Feature Flags – or Feature Toggles - can help you to
 - [Unleash](https://www.getunleash.io/) and [on GitHub](https://github.com/Unleash/unleash)
 
 </details>
+
+### Chapter 11: Trunk-based Development
+
+This chapter explains the benefits of trunk-based development and introduces you to the best git workflows to accelerate your software delivery.
+
+The chapter covers:
+- [Trunk-based development]( https://trunkbaseddevelopment.com)
+- Why you should avoid complex branching
+- Other git workflows
+- Accelerate with [MyFlow](https://writeabout.net/2021/12/21/myflow-a-successful-git-branching-model-for-devops-teams/)
+
+<details><summary>References and Links</summary>
+
+- Forsgren N., Humble, J., & Kim, G. (2018). Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations (1st ed.) [E-book]. IT Revolution Press.
+- [Trunk-based development]( https://trunkbaseddevelopment.com)
+- Git flow: Vincent Driessen (2010), [A successful Git branching model](https://nvie.com/posts/a-successful-git-branching-model/)
+- [GitLab flow](https://docs.gitlab.com/ee/topics/gitlab_flow.html)
+- Edward Thomson (2018). [Release Flow: How We Do Branching on the VSTS Team](https://devblogs.microsoft.com/devops/release-flow-how-we-do-branching-on-the-vsts-team/)
+- Aman Gupta (2015). [Deploying branches to GitHub.com](https://github.blog/2015-06-02-deploying-branches-to-github-com/) 
+- [GitHub flow](https://docs.github.com/en/get-started/quickstart/github-flow)
+- [GitHub CLI](https://cli.github.com/) 
+
+</details>
