@@ -354,6 +354,28 @@ Main topics in the chapter are:
 
 ### Chapter 13, Shift Left Security ad DevSecOps
 
+This chapter takes a broader look at the role of security in software development and how you can bake security into the process and practice DevSecOps, zero-trust, and how you can shift left security. The chapter looks at common attack scenarios and how you can practice security and create awareness using attack simulations and red team | blue team exercises. The chapter also introduces you to GitHub Codespaces as a secure development environment in the cloud.
+
+The key points that we will cover in this chapter are:
+- Shift left security
+- Assume breach, zero trust, and a security first mindset
+- Attack simulations
+- Red team | blue team exercises
+- Attack scenarios
+- GitHub Codespaces
+
+<details><summary>References and Links</summary>
+
+- IC3 (2020). [Internet Crime Report 2020](https://www.ic3.gov/Media/PDF/AnnualReport/2020_IC3Report.pdf).
+- IC3 (2019). [Internet Crime Report 2019](https://www.ic3.gov/Media/PDF/AnnualReport/2019_IC3Report.pdf).
+- [Data reaches in 2020](https://www.identityforce.com/blog/2020-data-breaches).
+- [Data breaches in 2021](https://www.identityforce.com/blog/2021-data-breaches).
+- Terranova & Microsoft (2021). [Gone Phishing Tournament - Phishing Benchmark Global Report 2021](https://terranovasecurity.com/gone-phishing-tournament/).
+- [GitHub Codespaces](https://docs.github.com/en/codespaces/).
+- [devcontainer.json reference](https://code.visualstudio.com/docs/remote/devcontainerjson-reference).
+
+</details>
+
 ### Chapter 14, Securing Your Code
 
 ### Chapter 15, Securing Your Deployments
