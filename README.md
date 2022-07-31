@@ -313,3 +313,47 @@ The chapter covers:
 - [GitHub CLI](https://cli.github.com/) 
 
 </details>
+
+## Part 3: Release with Confidence
+
+Part 3 explains how you can accelerate even further and release frequently with confidence by baking quality assurance and security into your release pipelines. This includes concepts like shifting left testing and security, testing in production, chaos engineering, DevSecOps, securing your software supply chain, and ring-based deployments.
+
+### Chapter 12: Shift Left Testing for Increased Quality
+
+takes a closer look at the role of quality assurance and testing on developer velocity and shows how you can shift left testing with test automation. The chapter also covers testing in production and chaos engineering.
+
+Main topics in the chapter are:
+- Shift left testing with test automation
+- Eradicating flaky tests
+- Code coverage
+- Shift right – testing in production
+- Fault injection and chaos engineering 
+- Tests and compliance
+- Test management in GitHub
+
+<details><summary>References and Links</summary>
+
+- Forsgren N., Humble, J., & Kim, G. (2018). Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations (1st ed.) [E-book]. IT Revolution Press.
+- Eran Kinsbruner (2018), Continuous Testing for DevOps Professionals: A Practical Guide From Industry Experts (Kindle Edition). CreateSpace Independent Publishing Platform.
+- Sam Laing (2015), [The Testing Manifesto](https://www.growingagile.co.za/2015/04/the-testing-manifesto/).
+- Wolfgang Platz, Cynthia Dunlop (2019), Enterprise Continuous Testing: Transforming Testing for Agile and DevOps (Kindle Edition), Independently published.
+- Tilo Linz (2014): Testing in Scrum (E-book), Rocky Nook.
+- Kaner C., Falk J., H. Q. Nguyen (1999), Testing Computer Software (2nd Edition) Wiley.
+- Roy Osherove (2009), The Art of Unit Testing (1st edition), Manning.
+- Martin Fowler (2007), [Mocks Aren't Stubs](https://martinfowler.com/articles/mocksArentStubs.html).
+- Müller, Matthias M.; Padberg, Frank (2017). About the Return on Investment of Test-Driven Development (PDF). Universität Karlsruhe, Germany.
+- Erdogmus, Hakan; Morisio, Torchiano (2014). On the Effectiveness of Test-first Approach to Programming. Proceedings of the IEEE Transactions on Software Engineering, 31(1). January 2005. (NRC 47445).
+- [Shift left to make testing fast and reliable](https://docs.microsoft.com/en-us/devops/develop/shift-left-make-testing-fast-reliable).
+- Martin Fowler (2011), [Eradicating Non-Determinism in Tests](https://martinfowler.com/articles/nonDeterminism.html).
+- Jordan Raine (2020). [Reducing flaky builds by 18x](https://github.blog/2020-12-16-reducing-flaky-builds-by-18x/).
+- John Micco (2016). [Flaky Tests at Google and How We Mitigate Them](https://testing.googleblog.com/2016/05/flaky-tests-at-google-and-how-we.html).
+- [Shift right to test in production](https://docs.microsoft.com/en-us/devops/deliver/shift-right-test-production).
+- Michael Nygard (2018). Release It! Design and Deploy Production-Ready Software (2nd Edition).  O'Reilly.
+
+</details>
+
+### Chapter 13, Shift Left Security ad DevSecOps
+
+### Chapter 14, Securing Your Code
+
+### Chapter 15, Securing Your Deployments
