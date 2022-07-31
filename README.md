@@ -182,7 +182,7 @@ This chapter explains the importance of automation for quality and speed. It int
 - The workflow syntax
 - Working with secrets
 - ✋ Hands-on: [Your first workflow](https://github.com/wulfland/getting-started)
-- ✋ Hands-on: [Your first action](https://github.com/actions/container-action
+- ✋ Hands-on: [Your first action](https://github.com/actions/container-action)
 
 <details><summary>References and Links</summary>
 
@@ -213,6 +213,24 @@ The following are the core topics that we will cover in this chapter:
 - [Virtual environments](https://github.com/actions/virtual-environments) 
 - [Hosting your own runners](https://docs.github.com/en/actions/hosting-your-own-runners)
 - A [curated list](https://jonico.github.io/awesome-runners) of awesome self-hosted GitHub Action runner solutions in a large comparison matrix.
+
+</details>
+
+### Chapter 8: Managing Dependencies Using GitHub Packages
+
+This chapter describes how you can use GitHub Packages, semantic Versioning together with GitHub Actions to manage dependencies between your teams and products.
+The main topics are as follows:
+- GitHub Packages
+- ✋ Hands-on: [Use npm packages with Actions](https://github.com/wulfland/package-demo)
+- ✋ Hands-on: [Use Docker with Packages](https://github.com/wulfland/container-demo)
+- Apache Maven, Gradle, NuGet, and RubyGems packages
+
+<details><summary>References and Links</summary>
+
+- [Semantic versioning](https://semver.org/)
+- [Billing and pricing](https://docs.github.com/en/billing/managing-billing-for-github-packages/about-billing-for-github-packages)
+- [Access control and visibility](https://docs.github.com/en/packages/learn-github-packages/configuring-a-packages-access-control-and-visibility)
+- [Working with the registry (Container, Apache Maven, Gradle. NuGet, npm, RubyGems)](https://docs.github.com/en/packages/working-with-a-github-packages-registry)
 
 </details>
 
