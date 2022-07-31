@@ -70,14 +70,42 @@ Highlights:
 
 </details>
 
+### Chapter 3: Teamwork and Collaborative Development
 
-
-## Chapter 3
+A high performing team is more than the sum of its members, and it takes a high performing team to build products that people love.
+In this chapter you’ll learn how to set up your team for high collaborative development using pull requests. You’ll learn what a pull request is and what features can help you to get a good code review workflow for your team.
+The following are the core topics that we will cover in this chapter:
+-	Software development is a team sport
+-	The heart of collaboration: the pull request
+-	Propose changes using pull requests
+-	Pull request reviews
+-	Finishing pull request
+-	Best practices for code reviews
 
 Hand-on exercices ✋
 
 1. [Create a pull request](ch3_pull-request/Create-PullRequest.md)
 2. [Review Changes](ch3_pull-request/Review-Changes.md)
+
+<details><summary>References and Links</summary>
+
+
+Link to the video on [how GitHub uses GitHub to collaborate](https://youtu.be/HyvZO5vvOas?t=3189).
+
+-	Coyle D. (2018). The Culture Code: The Secrets of Highly Successful Groups (1st ed.). Cornerstone Digital
+-	Kim G., Humble J., Debois P. & Willis J. (2016). The DevOps Handbook: How to Create World-Class Agility, Reliability, and Security in Technology Organizations (1st ed.). IT Revolution Press
+-	Scott Prugh (2014), [Continuous Delivery](https://www.scaledagileframework.com/guidance-continuous-delivery/).
+-	Chacon S. & Straub B. (2014). [Pro Git (2nd ed.)](https://git-scm.com/book/de/v2). Apress.
+-	Kaufmann M. (2021), Git für Dummies (1st ed., German). Wiley-VCH
+-	[Git](https://en.wikipedia.org/wiki/Git)
+-	[Pull requests](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
+-	[Code owners](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/about-code-owners)
+-	[Branch protection](https://docs.github.com/en/github/administering-a-repository/defining-the-mergeability-of-pull-requests/about-protected-branches#about-branch-protection-rules)
+-	[Code review assignments](https://docs.github.com/en/organizations/ organizing-members-into-teams/managing-code-review-assignment-for-your-team)
+-	[Auto-Merge](https://docs.github.com/en/github/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request/automatically-merging-a-pull-request)
+-	[Pull request reviews](https://docs.github.com/en/github/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/about-pull-request-reviews)
+
+</details>
 
 ## Chapter 4
 
