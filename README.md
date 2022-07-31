@@ -234,12 +234,36 @@ The main topics are as follows:
 
 </details>
 
-### Chapter 9
+### Chapter 9: Deploy to Any Platform
 
-[Staged deployments](/../../actions/workflows/StagedDeployment.yml)
+In this chapter I'll show you how you can easily deploy to any cloud and any platform in a secure and compliant way.
+The chapter will cover:
+- [Staged deployments](/../../actions/workflows/StagedDeployment.yml)
+- Automate your deployments
+- ✋ Hands-on: [Deploy to Azure App Service](ch9_release/Deploy_to_Azure_App_Service.md)
+- ✋ Hands-on: [Deploy to AWS Elastic Container Service (ECS)](ch9_release/Deploy_to_AWS_ECS.md)
+- ✋ Hands-on: [Deploy to Google Kubernetes Engine (GKE)](ch9_release/Deploy_to_GKE.md)
+- Infrastructure as Code
+- [Workflow templates](https://github.com/accelerate-devops/.github/tree/main/workflow-templates)
+- [Reusable workflows](.github/workflows/reusable.yml) and [how they are used](.github/workflows/reuse.yml)
+- Measuring success
 
-Hands-on execices ✋
+<details><summary>References and Links</summary>
 
-1. [Deploy to Azure App Service](ch9_release/Deploy_to_Azure_App_Service.md)
-2. [Deploy to AWS Elastic Container Service (ECS)](ch9_release/Deploy_to_AWS_ECS.md)
-3. [Deploy to Google Kubernetes Engine (GKE)](ch9_release/Deploy_to_GKE.md)
+- [CI/CD](https://azure.microsoft.com/en-us/overview/continuous-delivery-vs-continuous-deployment/)
+- [Deployment rings](https://docs.microsoft.com/en-us/azure/devops/migrate/phase-rollout-with-rings)
+- [Deploying to Azure App Service](https://docs.github.com/en/actions/deployment/deploying-to-your-cloud-provider/deploying-to-azure-app-service)
+- [Deploying to Google Kubernetes Engine](https://docs.github.com/en/actions/deployment/deploying-to-your-cloud-provider/deploying-to-google-kubernetes-engine)
+- [Deploy to AWS Elastic Container Service](https://docs.github.com/en/actions/deployment/deploying-to-your-cloud-provider/deploying-to-amazon-elastic-container-service)
+- [Security hardening your deployments](https://docs.github.com/en/actions/deployment/security-hardening-your-deployments)
+- [Kubernetes Deployments](https://kubernetes.io/docs/concepts/workloads/controllers/)
+- [Kubernetes Deployment Strategies](https://github.com/ContainerSolutions/k8s-deployment-strategies)
+- [Helm](https://helm.sh/)
+- [Kustomize](https://kustomize.io/)
+- [Infrastructure as Code](https://en.wikipedia.org/wiki/Infrastructure_as_code)
+- [Infrastructure as Code and environment or configuration drift](https://docs.microsoft.com/en-us/devops/deliver/what-is-infrastructure-as-code)
+- [Workflow templates](https://docs.github.com/en/actions/learn-github-actions/creating-workflow-templates)
+- [Reusable workflows](https://docs.github.com/en/actions/learn-github-actions/reusing-workflows)
+- [Four Keys Project](https://github.com/GoogleCloudPlatform/fourkeys/)
+
+</details>
