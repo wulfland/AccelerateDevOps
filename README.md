@@ -404,5 +404,29 @@ The key topics in this chapter are:
 
 </details>
 
-
 ### Chapter 15, Securing Your Deployments
+
+This chapter shows how you can secure deployments to your environments and how you can automate your complete release pipeline in a secure, compliant way to also meet regulatory requirements. The chapter covers Software Bills of Meterials (SBoM), code and commit signing, dynamic application security testing, and security hardening your release pipelines.
+We will cover the following main topics in this chapter:
+- Container and infrastructure security scanning
+- Automate the infrastructure change process
+- Source code and infrastructure integrity
+- Signing commits and code
+- Dynamic Application Security Testing
+- Security hardening your release pipeline
+
+<details><summary>References and Links</summary>
+
+- Kim G., Humble J., Debois P. & Willis J. (2016). The DevOps Handbook: How to Create World-Class Agility, Reliability, and Security in Technology Organizations (1st ed.). IT Revolution Press
+- Forsgren N., Humble, J., & Kim, G. (2018). Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations (1st ed.) [E-book]. IT Revolution Press.
+- Oladimeji S., Kerner S. M. (2021). [SolarWinds hack explained: Everything you need to know](https://whatis.techtarget.com/feature/SolarWinds-hack-explained-Everything-you-need-to-know).
+- Sudhakar Ramakrishna (2021). [New Findings From Our Investigation of SUNBURST](https://orangematter.solarwinds.com/2021/01/11/new-findings-from-our-investigation-of-sunburst/).
+- Crowdstrike blog (2021). [SUNSPOT: An Implant in the Build Process](https://www.crowdstrike.com/blog/sunspot-malware-technical-analysis/).
+- Eckels S., Smith J. & Ballenthin W. (2020). [SUNBURST Additional Technical Details](https://www.mandiant.com/resources/sunburst-additional-technical-details)
+- Souppaya M., Morello J., & Scarfone K. (2017). [Application Container Security Guide](https://doi.org/10.6028/NIST.SP.800-190).
+- National Telecommunications and Information Administration (NTIA), [Software Bill of Materials](https://www.ntia.gov/sbom).
+- Thomas Claburn (2018). [Check your repos... Crypto-coin-stealing code sneaks into fairly popular NPM lib (2m downloads per week)]( https://www.theregister.com/2018/11/26/npm_repo_bitcoin_stealer/).
+- Haymore A., Smart I., Gazdag V., Natesan D., & Fernick J. (2022). [10 real-world stories of how we’ve compromised CI/CD pipelines]( https://research.nccgroup.com/2022/01/13/10-real-world-stories-of-how-weve-compromised-ci-cd-pipelines/).
+- Rob Bos (2022). [Setup an internal GitHub Actions Marketplace](https://devopsjournal.io/blog/2021/10/14/GitHub-Actions-Internal-Marketplace.html)
+
+</details>
