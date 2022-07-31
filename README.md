@@ -107,27 +107,39 @@ Link to the video on [how GitHub uses GitHub to collaborate](https://youtu.be/Hy
 
 </details>
 
-## Chapter 4
+### Chapter 4: Asynchronous Work: Collaborate from Anywhere
 
-### Discussions
+In this chapter we’ll focus on synchronous and asynchronous work and how you can use the benefits of asynchronous workflows for a better collaboration in distributed, remote, and hybrid teams and a better cross-team collaboration.
+The following are the topics that will be covered in the chapter:
+-	Comparing synchronous and asynchronous work
+-	Distributed teams
+-	Cross-team collaboration
+-	[GitHub Discussions](https://docs.github.com/en/discussions)
+-	[GitHub Pages](https://docs.github.com/en/pages) and Wikis
+-	Working from everywhere with GitHub Mobile
 
-See [Discussions](https://github.com/wulfland/AccelerateDevOps/discussions) in the main menu.
+Highlights:
 
-### GitHub Pages
+- [Discussions](https://github.com/wulfland/AccelerateDevOps/discussions) in the main menu of this repository.
+- GitHub Pages: see [the rendered output](https://wulfland.github.io/AccelerateDevOps/) and check out the files in [/docs](docs) that are the source - especially the [_config.yml](/docs/_config.yml).
+- [Sample GitHub Wiki](https://github.com/wulfland/AccelerateDevOps/wiki).
+- Also see the sample pages for a ToC in [AsciiDoc](https://github.com/wulfland/AccelerateDevOps/wiki/AsciiDoc-ToC) and [MediaWiki](https://github.com/wulfland/AccelerateDevOps/wiki/MediaWiki-ToC).
+- A sample for navigation and ToC in a custom wiki can be found [here](ch4_customWiki/Home.md).
 
-See the result under [AccelerateDevOps](https://wulfland.github.io/AccelerateDevOps/) and check out the files in [/docs](docs) that are the source.
+<details><summary>References and Links</summary>
 
-### Wiki
+-	[History of communication 1](https://en.wikipedia.org/wiki/History_of_communication) 
+- [History of communication 2](https://www.g2.com/articles/history-of-communication)
+- [Time capsule: 150 years](https://www.elon.edu/u/imagining/time-capsule/150-years/)
+-	[History in general](https://www.dhm.de/lemo/kapitel) (in German)
+-	[World population growth](https://ourworldindata.org/world-population-growth)
+-	[Hybrid work](https://www.microsoft.com/en-us/worklab/work-trend-index/hybrid-work) 
+-	[Work trend index](https://www.microsoft.com/en-us/worklab/work-trend-index)
+-	[GitHub Discussions](https://docs.github.com/en/discussions)
+-	[GitHub Pages](https://docs.github.com/en/pages)
+-	[GitHub Mobile](https://github.com/mobile)
 
-#### GitHub Wiki
-
-See the sample [wiki](https://github.com/wulfland/AccelerateDevOps/wiki) in this repo.
-
-Also see the sample pages for a ToC in [AsciiDoc](https://github.com/wulfland/AccelerateDevOps/wiki/AsciiDoc-ToC) and [MediaWiki](https://github.com/wulfland/AccelerateDevOps/wiki/MediaWiki-ToC).
-
-#### Custom Wiki
-
-A sample for navigation and ToC in a custom wiki can be found [here](ch4_customWiki/Home.md).
+</details>
 
 ## Chapter 9
 
