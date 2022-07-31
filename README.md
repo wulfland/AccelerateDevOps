@@ -196,6 +196,26 @@ This chapter explains the importance of automation for quality and speed. It int
 
 </details>
 
+### Chapter 7: Running Your Workflows
+
+In this chapter, I’ll show you the different options for running your workflows. We’ll investigate hosted and self-hosted runners, and I’ll explain how you can tackle hybrid-cloud scenarios or hardware-in-the-loop tests using the different hosting options. I’ll also show you how to set up, manage, and scale self-hosted runners, and I’ll show you how you can approach monitoring and troubleshooting.
+The following are the core topics that we will cover in this chapter:
+- Hosted runners
+- Self-hosted runners
+- Managing access with runner groups
+- Using labels
+- Scaling your self-hosted runners
+- Monitoring and troubleshooting
+
+<details><summary>References and Links</summary>
+
+- [Using GitHub-hosted runners](https://docs.github.com/en/actions/using-github-hosted-runners)
+- [Virtual environments](https://github.com/actions/virtual-environments) 
+- [Hosting your own runners](https://docs.github.com/en/actions/hosting-your-own-runners)
+- A [curated list](https://jonico.github.io/awesome-runners) of awesome self-hosted GitHub Action runner solutions in a large comparison matrix.
+
+</details>
+
 ### Chapter 9
 
 [Staged deployments](/../../actions/workflows/StagedDeployment.yml)
