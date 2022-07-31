@@ -141,7 +141,34 @@ Highlights:
 
 </details>
 
-## Chapter 9
+### Chapter 5: The Influence of Open and Inner Source on Software Delivery Performance
+
+In this chapter I explain the history of free and open-source software and why it has become so important over the last years. I will explain the impact it can have on your engineering velocity and how you can use the principles of open source for better cross-team collaboration in your company (inner source).
+The chapter will cover:
+- History of free and open-source software
+- The difference between open source and open development
+- Benefits of embracing open source for companies
+- Implementing an open-source strategy
+- Open and inner source
+- Importance for insourcing
+- [GitHub Sponsors](https://github.com/sponsors)
+
+<details><summary>References and Links</summary>
+
+- Greene T. C. (2001). [Ballmer: Linux is a cancer](https://www.theregister.com/2001/06/02/ballmer_linux_is_a_cancer/) 
+- Warren T. (2020). [Microsoft: we were wrong about open source](https://www.theverge.com/2020/5/18/21262103/microsoft-open-source-linux-history-wrong-statement) 
+- Raymond, E. S. (1999). The Cathedral and the Bazaar: Musings on Linux and Open Source by an Accidental Revolutionary. O'Reilly Media.
+- O’Reilly (1998). FREEWARE LEADERS MEET IN FIRST-EVER SUMMIT O'Reilly Brings Together Creators of Perl, Apache,Linux and Netscape's Mozilla. [Press Release](https://www.oreilly.com/pub/pr/636) 
+- OSI (2018). [Open Source Initiative - History of the OSI](https://opensource.org/history)
+- Richard S. (2021). [Why Open Source Misses the Point of Free Software](https://www.gnu.org/philosophy/open-source-misses-the-point.en.html) 
+- Volpi M. (2019). [How open-source software took over the world](https://techcrunch.com/2019/01/12/how-open-source-software-took-over-the-world/) 
+- Ahlawat P., Boyne J., Herz D., Schmieg F., & Stephan M. (2021). [Why You Need an Open Source Software Strategy](https://www.bcg.com/publications/2021/open-source-software-strategy-benefits) 
+- [Inner Source](https://en.wikipedia.org/wiki/Inner_source) 
+- [GitHub Sponsors](https://github.com/sponsors) 
+
+</details>
+
+### Chapter 9
 
 [Staged deployments](/../../actions/workflows/StagedDeployment.yml)
 
