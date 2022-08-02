@@ -430,3 +430,57 @@ We will cover the following main topics in this chapter:
 - Rob Bos (2022). [Setup an internal GitHub Actions Marketplace](https://devopsjournal.io/blog/2021/10/14/GitHub-Actions-Internal-Marketplace.html)
 
 </details>
+
+## Part 4: Software Architecture
+
+Part 4 is about the correlation of your software architecture and the communication in your organization. You’ll learn how to transform your monolith gradually to a loosely coupled, event-based architecture.
+
+### Chapter 16: Loosely Coupled Architecture and Microservices
+
+In this chapter I’ll give you an overview of loosely coupled systems and how you can evolve your software and system design to achieve a high engineering velocity.
+The following topics will be covered in this chapter:
+- Loosely coupled systems
+- Microservices
+- Evolutionary design
+- Event-based architecture
+
+<details><summary>References and Links</summary>
+
+- Forsgren N., Humble, J., & Kim, G. (2018). Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations (1st ed.) [E-book]. IT Revolution Press.
+- Lewis J. & Fowler M. (2014). [Microservices](https://martinfowler.com/articles/microservices.html). 
+- Eric Evans (2003). Domain-Driven Design: Tackling Complexity in the Heart of Software. Addison-Wesley Professional.
+- Martin Fowler (2004). [StranglerFigApplication](https://martinfowler.com/bliki/StranglerFigApplication.html). 
+- Michael T. Nygard (2017). Release It!: Design and Deploy Production-Ready Software. Pragmatic Programmers
+- Martin Fowler (2005). [Event Sourcing](https://martinfowler.com/eaaDev/EventSourcing.html). 
+- Lucas Krause (2015). Microservices: Patterns and Applications – Designing Fine-Grained Services By Applying Patterns [Kindle Edition].
+  
+</details>
+
+### Chapter 17: Empower Your Teams
+
+This chapter is about the correlation of the communication structure of your organization and your system architecture (Conway’s law) and how you can use this to improve architecture, organization structure, and software delivery performance. It covers the two-pizza team, the Inverse Conway Maneuver, and a mono- versus multi-repo strategy for your code.
+The following are the core topics in this chapter:
+- Conway's law
+- The two-pizza team
+- Inverse Conway Maneuver
+- Delivery cadence
+- Mono- or multi-repo strategy
+
+<details><summary>References and Links</summary>
+  
+- Conway, Melvin (1968). How do committees invent: http://www.melconway.com/Home/pdf/committees.pdf
+- Raymond, Eric S. (1996). The New Hacker's Dictionary [3rd ed.]. MIT Press.
+- Amazon (2020): Introduction to DevOps on AWS - Two-Pizza Teams: https://docs.aws.amazon.com/whitepapers/latest/introduction-devops-aws/two-pizza-teams.html
+- Willink, J. & Leif Babin, L. (2017). Extreme Ownership: How U.S. Navy SEALs Lead and Win. Macmillan.
+- Miller, G. A. (1956). The magical number seven, plus or minus two: Some limits on our capacity for processing information: http://psychclassics.yorku.ca/Miller/
+- Cohn M. (2009). Succeeding with Agile: Software Development Using Scrum. Addison-Wesley
+- QSM (2011). Team Size Can Be the Key to a Successful Software Project: https://www.qsm.com/process_improvement_01.html
+- Karau, S. J., & Williams, K. D. (1993). Social loafing: A meta-analytic review and theoretical integration. Journal of Personality and Social Psychology, 65(4), 681–706. https://doi.org/10.1037/0022-3514.65.4.681
+- Robbins S. (2005). Essentials of organizational behavior. Prentice Hall.
+- Steiner, I. D. (1972). Group process and productivity. Academic Press Inc.
+- Forsgren N., Humble, J., & Kim, G. (2018). Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations (1st ed.) [E-book]. IT Revolution Press.
+- Skelton M., and Pais M. (2019). Team Topologies: Organizing Business and Technology Teams for Fast Flow. IT Revolution.
+- Reinertsen D. (2009). The Principles of Product Development Flow: Second Generation Lean Product Development. Celeritas Publishing.
+- Medina A. M. (2021). Remote debugging on Kubernetes using VS Code: https://developers.redhat.com/articles/2021/12/13/remote-debugging-kubernetes-using-vs-code
+  
+</details>
