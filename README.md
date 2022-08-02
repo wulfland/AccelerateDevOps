@@ -484,3 +484,74 @@ The following are the core topics in this chapter:
 - Medina A. M. (2021). [Remote debugging on Kubernetes using VS Code](https://developers.redhat.com/articles/2021/12/13/remote-debugging-kubernetes-using-vs-code).
   
 </details>
+
+## Part 5: Lean Product Management
+
+In Part 5 you’ll learn the importance of lean product management, how to integrate customer feedback into your flow of work, and how to combine hypothesis-driven development with OKR.
+
+### Chapter 18: Lean Product Development and Lean Startup
+
+This chapter is about the importance of lean product management at a product and feature level. It shows how you can incorporate customer feedback into your product management, create Minimal Viable Products, and how you can manage your enterprise portfolio.
+This chapter covers:
+- Lean product development
+- Incorporate customer feedback
+- The Minimal Viable Product
+- Enterprise portfolio management
+- Business Model Canvas
+
+<details><summary>References and Links</summary>
+
+- Forsgren N., Humble, J., & Kim, G. (2018). Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations (1st ed.) [E-book]. IT Revolution Press.
+- Ward, Allen (2007). Lean Product and Process Development. Lean Enterprise Institute, US
+- Ries, Eric (2011). The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses [Kindl Edition]. Currency
+- Humble J., Molesky J. & O’Reilly B. (2015). Lean Enterprise: How High Performance Organizations Innovate at Scale [Kindle Edition]. O'Reilly Media.
+- Osterwalder, Alexander (2004). [The Business Model Ontology: A Proposition In A Design Science Approach](http://www.hec.unil.ch/aosterwa/PhD/Osterwalder_PhD_BM_Ontology.pdf).
+- Goodwin, Kim (2009). Designing for the Digital Age - How to Create Human-Centered Products and Services. Wiley.
+  
+</details>  
+
+### Chapter 19: Experimentation and A|B-Testing
+
+This chapter explains how you can evolve and continuously improve your products by conducting experiments to validate hypotheses through evidence-based DevOps practices like A|B-testing. It also explains how you can leverage OKR to empower your teams to conduct the right experiments and to build the right products.
+The following topics will be covered in this chapter:
+- Conducting experiments with the scientific method
+- Effective A|B testing with GrowthBook and Flagger
+- Experimentation and OKR
+
+<details><summary>References and Links</summary>
+
+- [The Scientific Method](https://en.wikipedia.org/wiki/Scientific_method) 
+- [Ring-based Deployments](https://docs.microsoft.com/en-us/azure/devops/migrate/phase-rollout-with-rings)
+- [Optimizely](https://www.optimizely.com/) 
+- [Hubspot](https://www.hubspot.com/) 
+- [GrowthBook](https://github.com/growthbook/growthbook) 
+- [Flagger](https://flagger.app/) 
+- Stefan Prodan: [GitOps recipe for Progressive Delivery with Flux v2, Flagger and Istio](https://github.com/stefanprodan/gitops-istio)
+
+  </details>  
+  
+ ## Part 6:  GitHub for your Enterprise
+
+In Part 6 you’ll learn about the different hosting and pricing options of GitHub, how you can migrate to GitHub from other platforms, and best practices for structuring your teams and products inside GitHub Enterprise.
+
+### Chapter 20: GitHub: The Home for All Developer
+
+This chapter explains how GitHub can serve as the holistic, open platform for your teams. It explains the different hosting options, pricing, and how you can integrate it in your existing toolchain.
+The key topics are:
+- Hosting options and pricing
+- GitHub Connect
+- Hands-on: create your account on GitHub.com
+- Enterprise Security
+- GitHub Learning Labs
+
+<details><summary>References and Links</summary>
+  
+- [Pricing](https://github.com/pricing) 
+- [GitHub AE](https://docs.github.com/en/github-ae@latest/admin/overview/about-github-ae)
+- [SCIM](https://docs.github.com/en/enterprise-cloud@latest/rest/reference/scim)
+- [Enterprise Managed Users](https://docs.github.com/en/enterprise-cloud@latest/admin/identity-and-access-management/managing-iam-with-enterprise-managed-users/about-enterprise-managed-users)
+- [Audit logs](https://docs.github.com/en/enterprise-cloud@latest/admin/monitoring-activity-in-your-enterprise/reviewing-audit-logs-for-your-enterprise/about-the-audit-log-for-your-enterprise)
+- [GitHub Learning Lab](https://lab.github.com)
+- [Microsoft Learn](https://docs.microsoft.com/en-us/learn)
+
+</details>  
