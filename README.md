@@ -468,19 +468,19 @@ The following are the core topics in this chapter:
 
 <details><summary>References and Links</summary>
   
-- Conway, Melvin (1968). How do committees invent: http://www.melconway.com/Home/pdf/committees.pdf
+- Conway, Melvin (1968). [How do committees invent](http://www.melconway.com/Home/pdf/committees.pdf). 
 - Raymond, Eric S. (1996). The New Hacker's Dictionary [3rd ed.]. MIT Press.
-- Amazon (2020): Introduction to DevOps on AWS - Two-Pizza Teams: https://docs.aws.amazon.com/whitepapers/latest/introduction-devops-aws/two-pizza-teams.html
+- Amazon (2020): [Introduction to DevOps on AWS - Two-Pizza Teams](https://docs.aws.amazon.com/whitepapers/latest/introduction-devops-aws/two-pizza-teams.html). 
 - Willink, J. & Leif Babin, L. (2017). Extreme Ownership: How U.S. Navy SEALs Lead and Win. Macmillan.
-- Miller, G. A. (1956). The magical number seven, plus or minus two: Some limits on our capacity for processing information: http://psychclassics.yorku.ca/Miller/
+- Miller, G. A. (1956). [The magical number seven, plus or minus two: Some limits on our capacity for processing information](http://psychclassics.yorku.ca/Miller/). 
 - Cohn M. (2009). Succeeding with Agile: Software Development Using Scrum. Addison-Wesley
-- QSM (2011). Team Size Can Be the Key to a Successful Software Project: https://www.qsm.com/process_improvement_01.html
-- Karau, S. J., & Williams, K. D. (1993). Social loafing: A meta-analytic review and theoretical integration. Journal of Personality and Social Psychology, 65(4), 681–706. https://doi.org/10.1037/0022-3514.65.4.681
+- QSM (2011). [Team Size Can Be the Key to a Successful Software Project](https://www.qsm.com/process_improvement_01.html). 
+- Karau, S. J., & Williams, K. D. (1993). [Social loafing: A meta-analytic review and theoretical integration. Journal of Personality and Social Psychology, 65(4), 681–706](https://doi.org/10.1037/0022-3514.65.4.681). 
 - Robbins S. (2005). Essentials of organizational behavior. Prentice Hall.
 - Steiner, I. D. (1972). Group process and productivity. Academic Press Inc.
 - Forsgren N., Humble, J., & Kim, G. (2018). Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations (1st ed.) [E-book]. IT Revolution Press.
 - Skelton M., and Pais M. (2019). Team Topologies: Organizing Business and Technology Teams for Fast Flow. IT Revolution.
 - Reinertsen D. (2009). The Principles of Product Development Flow: Second Generation Lean Product Development. Celeritas Publishing.
-- Medina A. M. (2021). Remote debugging on Kubernetes using VS Code: https://developers.redhat.com/articles/2021/12/13/remote-debugging-kubernetes-using-vs-code
+- Medina A. M. (2021). [Remote debugging on Kubernetes using VS Code](https://developers.redhat.com/articles/2021/12/13/remote-debugging-kubernetes-using-vs-code).
   
 </details>
