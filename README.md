@@ -520,12 +520,12 @@ The following topics will be covered in this chapter:
 
 <details><summary>References and Links</summary>
 
-- [The Scientific Method](https://en.wikipedia.org/wiki/Scientific_method) 
+- [The Scientific Method](https://en.wikipedia.org/wiki/Scientific_method)
 - [Ring-based Deployments](https://docs.microsoft.com/en-us/azure/devops/migrate/phase-rollout-with-rings)
-- [Optimizely](https://www.optimizely.com/) 
-- [Hubspot](https://www.hubspot.com/) 
-- [GrowthBook](https://github.com/growthbook/growthbook) 
-- [Flagger](https://flagger.app/) 
+- [Optimizely](https://www.optimizely.com/)
+- [Hubspot](https://www.hubspot.com/)
+- [GrowthBook](https://github.com/growthbook/growthbook)
+- [Flagger](https://flagger.app/)
 - Stefan Prodan: [GitOps recipe for Progressive Delivery with Flux v2, Flagger and Istio](https://github.com/stefanprodan/gitops-istio)
 
   </details>  
