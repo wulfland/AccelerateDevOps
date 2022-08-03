@@ -61,7 +61,7 @@ Highlights:
 
 -	Tregubov A., Rodchenko N., Boehm B. & Lane J.A. (2017). [Impact of Task Switching and Work Interruptions on Software Development Processes]( https://www.researchgate.net/publication/317989659_Impact_of_task_switching_and_work_interruptions_on_software_development_processes)
 -	Weinberg G.M. (1991), Quality Software Management: Systems Thinking (1st ed.). Dorset House 
--	[GitHub issues](https://guides.github.com/features/issues/ and https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues)
+-	[GitHub issues](https://guides.github.com/features/issues/) and [about GitHub issues](https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues)
 -	[Markdown](https://guides.github.com/features/mastering-markdown/)
 -	[Issue templates](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/about-issue-and-pull-request-templates)
 -	[GitHub projects](https://docs.github.com/en/issues/trying-out-the-new-projects-experience/about-projects)
@@ -152,6 +152,14 @@ The chapter will cover:
 - Open and inner source
 - Importance for insourcing
 - [GitHub Sponsors](https://github.com/sponsors)
+
+Featured open-source projects to sponsor:
+
+- [curl](https://github.com/curl) is the example for an organization that you can sponsor. Curl is used every day by thousands of developers worldwide (sponsor [the project here](https://github.com/sponsors/curl)).
+- [Dennis Doomen](https://github.com/dennisdoomen) is the example for `Sponsor tiers`. He is the author of [FluentAssertions](https://github.com/fluentassertions/fluentassertions) - a .NET library I use in most of my C# projejcts ([sponsor Dennis here](https://github.com/sponsors/dennisdoomen)). 
+- [Jan De Dobbeleer](https://github.com/jandedobbeleer) is the example for `Sponsorship goals`. He is the maintainer of [oh-my-posh](https://github.com/JanDeDobbeleer/oh-my-posh) - a highly customizable and extensible prompt theme engine for PowerShell ([sponsor Jan here](https://github.com/sponsors/JanDeDobbeleer)).
+
+At the time writing the book, `GitHub Sponsors` was new and I worked with some of the mainters mentioned to set this up in a good way. So not all projects made it here - for example [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh), which I use every day and which was the inspiration for oh-my-posh.
 
 <details><summary>References and Links</summary>
 
@@ -555,3 +563,73 @@ The key topics are:
 - [Microsoft Learn](https://docs.microsoft.com/en-us/learn)
 
 </details>  
+
+### Chapter 21: Migrating to GitHub
+
+If you are not a start-up, then you always have existing tools and processes that must be considered when moving to a new platform. In this chapter, we will discuss different strategies related to migrating to GitHub from different platforms.
+In this chapter, we will cover the following:
+- Picking the right migration strategy
+- Achieving compliance with low-fidelity migrations
+- Synchronizing requirements for a smooth transition
+- Migrating from Azure DevOps with the GitHub Enterprise Importer
+- Migrating pipelines using Valet
+
+<details><summary>References and Links</summary>
+  
+- [GitHub Importer](https://docs.github.com/en/get-started/importing-your-projects-to-github/importing-source-code-to-github/importing-a-repository-with-github-importer). 
+- [GitHub Enterprise Importer CLI](https://github.com/github/gh-gei).
+- [GitHub Valet CLI](https://github.com/github/gh-valet).
+- [migrating with GitHub Enterprise Importer](https://docs.github.com/en/early-access/github/migrating-with-github-enterprise-importer). 
+- [GitHub Enterprise Server Importer](https://docs.github.com/en/enterprise-server@3.4/admin/user-management/migrating-data-to-and-from-your-enterprise/about-migrations)
+- [ghe-migrator](https://docs.github.com/en/enterprise-server@3.4/admin/user-management/migrating-data-to-and-from-your-enterprise/about-migrations). 
+- [Tasktop](https://www.tasktop.com/). 
+- [git-svn](https://git-scm.com/docs/git-svn).
+- [git-tfs](https://github.com/git-tfs/git-tfs).
+
+</details> 
+  
+### Chapter 22: Organize Your Teams
+  
+In this chapter you’ll learn best-practices to structure your repositories and teams into organizations and enterprises to foster collaboration and facilitate administration.
+The chapter covers:
+- GitHub scopes and namespaces
+- Structuring GitHub teams
+- Role-based access
+- Custom roles
+- Outside Collaborators
+
+<details><summary>References and Links</summary>
+
+- [About teams](https://docs.github.com/en/organizations/organizing-members-into-teams/about-teams).
+- [Base permissions](https://docs.github.com/en/organizations/managing-access-to-your-organizations-repositories/setting-base-permissions-for-an-organization). 
+- [Custom roles](https://docs.github.com/en/enterprise-cloud@latest/organizations/managing-peoples-access-to-your-organization-with-roles/managing-custom-repository-roles-for-an-organization).
+- [Outside collaborators](https://docs.github.com/en/organizations/managing-access-to-your-organizations-repositories/adding-outside-collaborators-to-repositories-in-your-organization). 
+- [Managing access to your repository](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/managing-teams-and-people-with-access-to-your-repository#inviting-a-team-or-person).
+
+</details> 
+  
+### Chapter 23: Transform Your Enterprise
+
+The last chapter puts all the pieces together. The book gives you a lot of tools that you can use to drive a successful transformation and to gain developer velocity. But only if all pieces are put together the transformation will succeed. The chapter will explain, why many transformations fail, and what you shoud do to make your transformation a success.
+
+We will cover the following topics:
+- Why many transformations fail
+- Start with WHY
+- Data-driven transformation
+
+<details><summary>References and Links</summary>
+
+- Simon Sinek (2011), Start With Why – How Great Leaders Inspire Everyone to Take Action, Penguin
+- Simon Sinek (2019), The Infinite Game, Penguin
+- Nadella, S., Shaw, G. & Nichols, J. T. (2017), Hit Refresh: The Quest to Rediscover Microsoft's Soul and Imagine a Better Future for Everyone, Harper Business
+- Srivastava S., Trehan K., Wagle D. & Wang J. (April 2020). [Developer Velocity: How software excellence fuels business performance](https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-insights/developer-velocity-how-software-excellence-fuels-business-performance). 
+- Forsgren N., Humble, J., & Kim, G. (2018). Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations (1st ed.) [E-book]. IT Revolution Press.
+- John P. Kotter (2008), A Sense of Urgency, Harvard Business Review Press
+- John P. Kotter (2012), Leading Change, Harvard Business Review Press
+- Volkswagen (2019): [Volkswagen with New Corporate Mission Statement Environment "goTOzero"](https://www.volkswagenag.com/en/news/2019/07/goTOzero.html).
+- Mezedes-Benz Group Media (2019): [“Ambition2039”: Our path to sustainable mobility](https://group-media.mercedes-benz.com/marsMediaSite/ko/en/43348842).
+- [Theory of constraints](https://www.leanproduction.com/theory-of-constraints). 
+- Small World (2016): [Theory of constraints – Drum-Buffer-Rope](https://www.smallworldsocial.com/theory-of-constraints-104-balance-flow-not-capacity/).
+- de Vries, M., & van Osnabrugge, R. (2022): [Together we build an Engineering Culture](https://xpirit.com/together-we-build-an-engineering-culture/). XPRT Magazine #12. 
+
+</details> 
