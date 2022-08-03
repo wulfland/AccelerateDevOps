@@ -61,7 +61,7 @@ Highlights:
 
 -	Tregubov A., Rodchenko N., Boehm B. & Lane J.A. (2017). [Impact of Task Switching and Work Interruptions on Software Development Processes]( https://www.researchgate.net/publication/317989659_Impact_of_task_switching_and_work_interruptions_on_software_development_processes)
 -	Weinberg G.M. (1991), Quality Software Management: Systems Thinking (1st ed.). Dorset House 
--	[GitHub issues](https://guides.github.com/features/issues/ and https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues)
+-	[GitHub issues](https://guides.github.com/features/issues/) and [about GitHub issues](https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues)
 -	[Markdown](https://guides.github.com/features/mastering-markdown/)
 -	[Issue templates](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/about-issue-and-pull-request-templates)
 -	[GitHub projects](https://docs.github.com/en/issues/trying-out-the-new-projects-experience/about-projects)
@@ -152,6 +152,14 @@ The chapter will cover:
 - Open and inner source
 - Importance for insourcing
 - [GitHub Sponsors](https://github.com/sponsors)
+
+Featured open-source projects to sponsor:
+
+- [curl](https://github.com/curl) is the example for an organization that you can sponsor. Curl is used every day by thousands of developers worldwide (sponsor [the project here](https://github.com/sponsors/curl)).
+- [Dennis Doomen](https://github.com/dennisdoomen) is the example for `Sponsor tiers`. He is the author of [FluentAssertions](https://github.com/fluentassertions/fluentassertions) - a .NET library I use in most of my C# projejcts ([sponsor Dennis here](https://github.com/sponsors/dennisdoomen)). 
+- [Jan De Dobbeleer](https://github.com/jandedobbeleer) is the example for `Sponsorship goals`. He is the maintainer of [oh-my-posh](https://github.com/JanDeDobbeleer/oh-my-posh) - a highly customizable and extensible prompt theme engine for PowerShell ([sponsor Jan here](https://github.com/sponsors/JanDeDobbeleer)).
+
+At the time writing the book, `GitHub Sponsors` was new and I worked with some of the mainters mentioned to set this up in a good way. So not all projects made it here - for example [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh), which I use every day and which was the inspiration for oh-my-posh.
 
 <details><summary>References and Links</summary>
 
@@ -430,3 +438,198 @@ We will cover the following main topics in this chapter:
 - Rob Bos (2022). [Setup an internal GitHub Actions Marketplace](https://devopsjournal.io/blog/2021/10/14/GitHub-Actions-Internal-Marketplace.html)
 
 </details>
+
+## Part 4: Software Architecture
+
+Part 4 is about the correlation of your software architecture and the communication in your organization. You’ll learn how to transform your monolith gradually to a loosely coupled, event-based architecture.
+
+### Chapter 16: Loosely Coupled Architecture and Microservices
+
+In this chapter I’ll give you an overview of loosely coupled systems and how you can evolve your software and system design to achieve a high engineering velocity.
+The following topics will be covered in this chapter:
+- Loosely coupled systems
+- Microservices
+- Evolutionary design
+- Event-based architecture
+
+<details><summary>References and Links</summary>
+
+- Forsgren N., Humble, J., & Kim, G. (2018). Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations (1st ed.) [E-book]. IT Revolution Press.
+- Lewis J. & Fowler M. (2014). [Microservices](https://martinfowler.com/articles/microservices.html). 
+- Eric Evans (2003). Domain-Driven Design: Tackling Complexity in the Heart of Software. Addison-Wesley Professional.
+- Martin Fowler (2004). [StranglerFigApplication](https://martinfowler.com/bliki/StranglerFigApplication.html). 
+- Michael T. Nygard (2017). Release It!: Design and Deploy Production-Ready Software. Pragmatic Programmers
+- Martin Fowler (2005). [Event Sourcing](https://martinfowler.com/eaaDev/EventSourcing.html). 
+- Lucas Krause (2015). Microservices: Patterns and Applications – Designing Fine-Grained Services By Applying Patterns [Kindle Edition].
+  
+</details>
+
+### Chapter 17: Empower Your Teams
+
+This chapter is about the correlation of the communication structure of your organization and your system architecture (Conway’s law) and how you can use this to improve architecture, organization structure, and software delivery performance. It covers the two-pizza team, the Inverse Conway Maneuver, and a mono- versus multi-repo strategy for your code.
+The following are the core topics in this chapter:
+- Conway's law
+- The two-pizza team
+- Inverse Conway Maneuver
+- Delivery cadence
+- Mono- or multi-repo strategy
+
+<details><summary>References and Links</summary>
+  
+- Conway, Melvin (1968). [How do committees invent](http://www.melconway.com/Home/pdf/committees.pdf). 
+- Raymond, Eric S. (1996). The New Hacker's Dictionary [3rd ed.]. MIT Press.
+- Amazon (2020): [Introduction to DevOps on AWS - Two-Pizza Teams](https://docs.aws.amazon.com/whitepapers/latest/introduction-devops-aws/two-pizza-teams.html). 
+- Willink, J. & Leif Babin, L. (2017). Extreme Ownership: How U.S. Navy SEALs Lead and Win. Macmillan.
+- Miller, G. A. (1956). [The magical number seven, plus or minus two: Some limits on our capacity for processing information](http://psychclassics.yorku.ca/Miller/). 
+- Cohn M. (2009). Succeeding with Agile: Software Development Using Scrum. Addison-Wesley
+- QSM (2011). [Team Size Can Be the Key to a Successful Software Project](https://www.qsm.com/process_improvement_01.html). 
+- Karau, S. J., & Williams, K. D. (1993). [Social loafing: A meta-analytic review and theoretical integration. Journal of Personality and Social Psychology, 65(4), 681–706](https://doi.org/10.1037/0022-3514.65.4.681). 
+- Robbins S. (2005). Essentials of organizational behavior. Prentice Hall.
+- Steiner, I. D. (1972). Group process and productivity. Academic Press Inc.
+- Forsgren N., Humble, J., & Kim, G. (2018). Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations (1st ed.) [E-book]. IT Revolution Press.
+- Skelton M., and Pais M. (2019). Team Topologies: Organizing Business and Technology Teams for Fast Flow. IT Revolution.
+- Reinertsen D. (2009). The Principles of Product Development Flow: Second Generation Lean Product Development. Celeritas Publishing.
+- Medina A. M. (2021). [Remote debugging on Kubernetes using VS Code](https://developers.redhat.com/articles/2021/12/13/remote-debugging-kubernetes-using-vs-code).
+  
+</details>
+
+## Part 5: Lean Product Management
+
+In Part 5 you’ll learn the importance of lean product management, how to integrate customer feedback into your flow of work, and how to combine hypothesis-driven development with OKR.
+
+### Chapter 18: Lean Product Development and Lean Startup
+
+This chapter is about the importance of lean product management at a product and feature level. It shows how you can incorporate customer feedback into your product management, create Minimal Viable Products, and how you can manage your enterprise portfolio.
+This chapter covers:
+- Lean product development
+- Incorporate customer feedback
+- The Minimal Viable Product
+- Enterprise portfolio management
+- Business Model Canvas
+
+<details><summary>References and Links</summary>
+
+- Forsgren N., Humble, J., & Kim, G. (2018). Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations (1st ed.) [E-book]. IT Revolution Press.
+- Ward, Allen (2007). Lean Product and Process Development. Lean Enterprise Institute, US
+- Ries, Eric (2011). The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses [Kindl Edition]. Currency
+- Humble J., Molesky J. & O’Reilly B. (2015). Lean Enterprise: How High Performance Organizations Innovate at Scale [Kindle Edition]. O'Reilly Media.
+- Osterwalder, Alexander (2004). [The Business Model Ontology: A Proposition In A Design Science Approach](http://www.hec.unil.ch/aosterwa/PhD/Osterwalder_PhD_BM_Ontology.pdf).
+- Goodwin, Kim (2009). Designing for the Digital Age - How to Create Human-Centered Products and Services. Wiley.
+  
+</details>  
+
+### Chapter 19: Experimentation and A|B-Testing
+
+This chapter explains how you can evolve and continuously improve your products by conducting experiments to validate hypotheses through evidence-based DevOps practices like A|B-testing. It also explains how you can leverage OKR to empower your teams to conduct the right experiments and to build the right products.
+The following topics will be covered in this chapter:
+- Conducting experiments with the scientific method
+- Effective A|B testing with GrowthBook and Flagger
+- Experimentation and OKR
+
+<details><summary>References and Links</summary>
+
+- [The Scientific Method](https://en.wikipedia.org/wiki/Scientific_method)
+- [Ring-based Deployments](https://docs.microsoft.com/en-us/azure/devops/migrate/phase-rollout-with-rings)
+- [Optimizely](https://www.optimizely.com/)
+- [Hubspot](https://www.hubspot.com/)
+- [GrowthBook](https://github.com/growthbook/growthbook)
+- [Flagger](https://flagger.app/)
+- Stefan Prodan: [GitOps recipe for Progressive Delivery with Flux v2, Flagger and Istio](https://github.com/stefanprodan/gitops-istio)
+
+  </details>  
+  
+ ## Part 6:  GitHub for your Enterprise
+
+In Part 6 you’ll learn about the different hosting and pricing options of GitHub, how you can migrate to GitHub from other platforms, and best practices for structuring your teams and products inside GitHub Enterprise.
+
+### Chapter 20: GitHub: The Home for All Developer
+
+This chapter explains how GitHub can serve as the holistic, open platform for your teams. It explains the different hosting options, pricing, and how you can integrate it in your existing toolchain.
+The key topics are:
+- Hosting options and pricing
+- GitHub Connect
+- Hands-on: create your account on GitHub.com
+- Enterprise Security
+- GitHub Learning Labs
+
+<details><summary>References and Links</summary>
+  
+- [Pricing](https://github.com/pricing) 
+- [GitHub AE](https://docs.github.com/en/github-ae@latest/admin/overview/about-github-ae)
+- [SCIM](https://docs.github.com/en/enterprise-cloud@latest/rest/reference/scim)
+- [Enterprise Managed Users](https://docs.github.com/en/enterprise-cloud@latest/admin/identity-and-access-management/managing-iam-with-enterprise-managed-users/about-enterprise-managed-users)
+- [Audit logs](https://docs.github.com/en/enterprise-cloud@latest/admin/monitoring-activity-in-your-enterprise/reviewing-audit-logs-for-your-enterprise/about-the-audit-log-for-your-enterprise)
+- [GitHub Learning Lab](https://lab.github.com)
+- [Microsoft Learn](https://docs.microsoft.com/en-us/learn)
+
+</details>  
+
+### Chapter 21: Migrating to GitHub
+
+If you are not a start-up, then you always have existing tools and processes that must be considered when moving to a new platform. In this chapter, we will discuss different strategies related to migrating to GitHub from different platforms.
+In this chapter, we will cover the following:
+- Picking the right migration strategy
+- Achieving compliance with low-fidelity migrations
+- Synchronizing requirements for a smooth transition
+- Migrating from Azure DevOps with the GitHub Enterprise Importer
+- Migrating pipelines using Valet
+
+<details><summary>References and Links</summary>
+  
+- [GitHub Importer](https://docs.github.com/en/get-started/importing-your-projects-to-github/importing-source-code-to-github/importing-a-repository-with-github-importer). 
+- [GitHub Enterprise Importer CLI](https://github.com/github/gh-gei).
+- [GitHub Valet CLI](https://github.com/github/gh-valet).
+- [migrating with GitHub Enterprise Importer](https://docs.github.com/en/early-access/github/migrating-with-github-enterprise-importer). 
+- [GitHub Enterprise Server Importer](https://docs.github.com/en/enterprise-server@3.4/admin/user-management/migrating-data-to-and-from-your-enterprise/about-migrations)
+- [ghe-migrator](https://docs.github.com/en/enterprise-server@3.4/admin/user-management/migrating-data-to-and-from-your-enterprise/about-migrations). 
+- [Tasktop](https://www.tasktop.com/). 
+- [git-svn](https://git-scm.com/docs/git-svn).
+- [git-tfs](https://github.com/git-tfs/git-tfs).
+
+</details> 
+  
+### Chapter 22: Organize Your Teams
+  
+In this chapter you’ll learn best-practices to structure your repositories and teams into organizations and enterprises to foster collaboration and facilitate administration.
+The chapter covers:
+- GitHub scopes and namespaces
+- Structuring GitHub teams
+- Role-based access
+- Custom roles
+- Outside Collaborators
+
+<details><summary>References and Links</summary>
+
+- [About teams](https://docs.github.com/en/organizations/organizing-members-into-teams/about-teams).
+- [Base permissions](https://docs.github.com/en/organizations/managing-access-to-your-organizations-repositories/setting-base-permissions-for-an-organization). 
+- [Custom roles](https://docs.github.com/en/enterprise-cloud@latest/organizations/managing-peoples-access-to-your-organization-with-roles/managing-custom-repository-roles-for-an-organization).
+- [Outside collaborators](https://docs.github.com/en/organizations/managing-access-to-your-organizations-repositories/adding-outside-collaborators-to-repositories-in-your-organization). 
+- [Managing access to your repository](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/managing-teams-and-people-with-access-to-your-repository#inviting-a-team-or-person).
+
+</details> 
+  
+### Chapter 23: Transform Your Enterprise
+
+The last chapter puts all the pieces together. The book gives you a lot of tools that you can use to drive a successful transformation and to gain developer velocity. But only if all pieces are put together the transformation will succeed. The chapter will explain, why many transformations fail, and what you shoud do to make your transformation a success.
+
+We will cover the following topics:
+- Why many transformations fail
+- Start with WHY
+- Data-driven transformation
+
+<details><summary>References and Links</summary>
+
+- Simon Sinek (2011), Start With Why – How Great Leaders Inspire Everyone to Take Action, Penguin
+- Simon Sinek (2019), The Infinite Game, Penguin
+- Nadella, S., Shaw, G. & Nichols, J. T. (2017), Hit Refresh: The Quest to Rediscover Microsoft's Soul and Imagine a Better Future for Everyone, Harper Business
+- Srivastava S., Trehan K., Wagle D. & Wang J. (April 2020). [Developer Velocity: How software excellence fuels business performance](https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-insights/developer-velocity-how-software-excellence-fuels-business-performance). 
+- Forsgren N., Humble, J., & Kim, G. (2018). Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations (1st ed.) [E-book]. IT Revolution Press.
+- John P. Kotter (2008), A Sense of Urgency, Harvard Business Review Press
+- John P. Kotter (2012), Leading Change, Harvard Business Review Press
+- Volkswagen (2019): [Volkswagen with New Corporate Mission Statement Environment "goTOzero"](https://www.volkswagenag.com/en/news/2019/07/goTOzero.html).
+- Mezedes-Benz Group Media (2019): [“Ambition2039”: Our path to sustainable mobility](https://group-media.mercedes-benz.com/marsMediaSite/ko/en/43348842).
+- [Theory of constraints](https://www.leanproduction.com/theory-of-constraints). 
+- Small World (2016): [Theory of constraints – Drum-Buffer-Rope](https://www.smallworldsocial.com/theory-of-constraints-104-balance-flow-not-capacity/).
+- de Vries, M., & van Osnabrugge, R. (2022): [Together we build an Engineering Culture](https://xpirit.com/together-we-build-an-engineering-culture/). XPRT Magazine #12. 
+
+</details> 
