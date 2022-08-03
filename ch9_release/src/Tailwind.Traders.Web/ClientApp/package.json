@@ -14,7 +14,7 @@
     "@babel/helper-regex": "^7.10.5",
     "@fluentui/react": "^7.170.0",
     "@microsoft/applicationinsights-react-js": "^2.5.4",
-    "@microsoft/applicationinsights-web": "^2.6.2",
+    "@microsoft/applicationinsights-web": "^2.8.6",
     "axios": "^0.21.1",
     "dotenv": "^8.6.0",
     "history": "^4.9.0",
