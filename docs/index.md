@@ -13,3 +13,5 @@ layout: home
 ```
 
 To see exc excerpts of your posts and not only the heading add `show_excerpts: true` to your `_config-yml`.
+
+Test 
