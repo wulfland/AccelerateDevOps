@@ -6,7 +6,7 @@ RUN npm install
 COPY ClientApp/ .
 RUN npm run build
 
-FROM mcr.microsoft.com/dotnet/sdk:6.0.101
+FROM mcr.microsoft.com/dotnet/sdk:7.0
 ENV BuildingDocker true
 ARG BUILD_CONFIGURATION=Debug
 ENV ASPNETCORE_ENVIRONMENT=Development
