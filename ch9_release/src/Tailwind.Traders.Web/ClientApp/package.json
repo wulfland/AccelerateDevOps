@@ -16,7 +16,7 @@
     "@microsoft/applicationinsights-react-js": "^2.5.4",
     "@microsoft/applicationinsights-web": "^2.6.2",
     "axios": "^0.21.1",
-    "dotenv": "^8.6.0",
+    "dotenv": "^16.0.2",
     "history": "^4.9.0",
     "i18next": "^12.0.0",
     "izitoast": "^1.4.0",
