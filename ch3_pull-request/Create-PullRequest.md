@@ -14,8 +14,8 @@ In Chapter 3 - _Teamwork and Collaborative Development_ we learn how to collabo
 
 4. Modify the following line by removing the letters that do not belong:
 
-   __---> The ccow jumpedd ovverr thhe mooon__
-
+   Test string
+   
 5. Commit your changes into a new _branch_:
 
    ![Commit Changes](img/commit.png)
