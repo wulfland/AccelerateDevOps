@@ -3,7 +3,7 @@ ARG runtimeTag=5.0
 ARG image=mcr.microsoft.com/dotnet/aspnet
 ARG sdkImage=mcr.microsoft.com/dotnet/sdk
 
-FROM node:17-alpine as build-node
+FROM node:19-alpine as build-node
 WORKDIR /ClientApp
 COPY ClientApp/package.json .
 COPY ClientApp/package-lock.json .
