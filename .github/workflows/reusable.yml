@@ -23,5 +23,5 @@ jobs:
         run: echo "Hello ${{ inputs.who-to-greet }}"
       - name: Set time
         id: time
-        run: echo "::set-output name=current-time::$(date)"
+        run: echo "current-time=$(date)" >> $GITHUB_OUTPUT
 
