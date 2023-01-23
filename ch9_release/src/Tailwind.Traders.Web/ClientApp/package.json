@@ -36,7 +36,7 @@
     "react-scripts": "^3.4.4",
     "react-scroll": "^1.8.2",
     "recompose": "^0.30.0",
-    "redux": "^4.1.0",
+    "redux": "^4.2.0",
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.3.0"
   },
