@@ -7,7 +7,7 @@
     "@azure/communication-calling": "^1.0.0",
     "@azure/communication-chat": "^1.0.0",
     "@azure/communication-common": "^1.0.0",
-    "@azure/communication-signaling": "^1.0.0-beta.5",
+    "@azure/communication-signaling": "^1.0.0-beta.16",
     "@azure/cosmos": "^2.0.5",
     "@azure/logger": "^1.0.2",
     "@babel/helper-compilation-targets": "^7.13.16",
