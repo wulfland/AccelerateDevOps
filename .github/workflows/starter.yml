@@ -163,7 +163,7 @@ jobs:
     
     steps:
       - name: Set time
-        run: echo '::set-output name=my_time::$(date)'
+        run: echo 'my_time=$(date)' >> $GITHUB_OUTPUT
         id: set-time
         
       - name: Output time

@@ -43,7 +43,7 @@ jobs:
           echo "Build and push $imagename"
           docker build -t $imagename .
           docker push $imagename
-          echo "::set-output name=image::$imagename"
+          echo "image=$imagename" >> $GITHUB_OUTPUT
 
   Deploy:
     runs-on: ubuntu-latest
