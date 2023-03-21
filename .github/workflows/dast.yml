@@ -23,7 +23,7 @@ jobs:
           target: ${{ env.TARGET_URL }}
           
       - name: OWASP ZAP API Scan
-        uses: zaproxy/action-api-scan@v0.1.0
+        uses: zaproxy/action-api-scan@v0.2.0
         with:
           target: ${{ env.TARGET_API }}
           
