@@ -1,7 +1,7 @@
 ---
 layout: home
 ---
-
+Test
 This is the the homepage `index.md` of the type `home`. `Pages` are displayed in the top menu and `Posts` after this section.
 
 Use the following page header for the homepage:
