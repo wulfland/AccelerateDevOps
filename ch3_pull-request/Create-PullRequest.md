@@ -10,7 +10,7 @@ In Chapter 3 - _Teamwork and Collaborative Development_ we learn how to collabo
 
 3. Add one or two lines here with a random text:
 
-   __This is a Poc__
+   __This is a PoT
 
 4. Modify the following line by removing the letters that do not belong:
 
