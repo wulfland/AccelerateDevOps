@@ -46,7 +46,7 @@ jobs:
         uses: gittools/actions/gitversion/execute@v0.10.2
         
       - name: 'Change NPM version'
-        uses: reedyuk/npm-version@1.1.1
+        uses: reedyuk/npm-version@1.2.1
         with:
           version: $GITVERSION_SEMVER
           package: ch8_packages/npm
@@ -77,7 +77,7 @@ jobs:
           registry-url: https://registry.npmjs.org
            
       - name: 'Change NPM version'
-        uses: reedyuk/npm-version@1.1.1
+        uses: reedyuk/npm-version@1.2.1
         with:
           version: ${{ needs.publish-gpr.outputs.semver }}
           package: ch8_packages/npm
