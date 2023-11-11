@@ -12,4 +12,5 @@ show_excerpts: true
 header_pages:
 - get-started.md
 - about-markdown.md
+- my-page.md
 - About.md
