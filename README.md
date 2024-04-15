@@ -5,7 +5,7 @@
 
 This is the companion repository for my book [Accelerate DevOps with GitHub](https://www.amazon.com/dp/B0B4DW7NSL/ref=cm_sw_r_tw_dp_B4DR80D2BBERYNSQ5V9C). You can find all hands-on labs and other examples from the book here. I also provide all the links and references from the chapters.
 
-## Part 1: Lean Management and Collaboration
+## Part 1: Lean Management and Collaboration.
 
 In Part 1 you will learn how to reduce ballast from your development process and move to a lean and collaborative way of working that allows your teams to accelerate their value delivery. You’ll learn how to use GitHub to work together from everywhere effectively and use work insights and the right metrics to optimize your engineering productivity.
 
