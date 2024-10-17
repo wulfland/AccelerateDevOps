@@ -19,15 +19,16 @@ jobs:
       with:
         path: ./ch9_release/src/Tailwind.Traders.Web.sln
         github-bearer-token: ${{ secrets.GITHUB_TOKEN }}
-
+        json: true
+        
     - name: Attest
       uses: actions/attest-sbom@v1
       with:
         subject-path: ./ch9_release/src/
-        sbom-path: bom.xml
+        sbom-path: bom.json
         
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v4
       with:
-        path: bom.xml
+        path: bom.json
     
