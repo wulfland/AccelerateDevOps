@@ -23,8 +23,8 @@ jobs:
     - name: Attest
       uses: actions/attest-sbom@v1
       with:
-        subject-path: './ch9_release/src/'
-        sbom-path: 'sbom.spdx.json'
+        subject-path: ./ch9_release/src/
+        sbom-path: bom.xml
         
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v4
