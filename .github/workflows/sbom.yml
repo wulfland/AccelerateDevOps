@@ -5,6 +5,10 @@ on: [workflow_dispatch]
 jobs:
   build:
     runs-on: ubuntu-latest
+
+    permissions:
+      id-token: write
+      attestations: write
     
     steps:
     - name: Checkout Code
@@ -15,6 +19,12 @@ jobs:
       with:
         path: ./ch9_release/src/Tailwind.Traders.Web.sln
         github-bearer-token: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Attest
+      uses: actions/attest-sbom@v1
+      with:
+        subject-path: './ch9_release/src/'
+        sbom-path: 'sbom.spdx.json'
         
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v4
