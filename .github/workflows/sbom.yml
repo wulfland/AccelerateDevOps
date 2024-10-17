@@ -24,7 +24,7 @@ jobs:
     - name: Attest
       uses: actions/attest-sbom@v1
       with:
-        subject-path: ./ch9_release/src/
+        subject-path: ./ch9_release/src/Tailwind.Traders.Web/Dockerfile
         sbom-path: bom.json
         
     - name: Upload a Build Artifact
