@@ -10,7 +10,6 @@ In Chapter 3 - _Teamwork and Collaborative Development_ we learn how to collabo
 
 3. Add one or two lines here with a random text:
 
-   __...__
    __Test text 1111__
    __Test text 123__
 
