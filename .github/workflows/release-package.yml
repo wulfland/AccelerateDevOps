@@ -37,13 +37,13 @@ jobs:
           registry-url: https://npm.pkg.github.com/
       
       - name: Install GitVersion
-        uses: gittools/actions/gitversion/setup@v1.1.1
+        uses: gittools/actions/gitversion/setup@v3.0.2
         with:
           versionSpec: '5.x'
           
       - name: Determine Version
         id:   gitversion
-        uses: gittools/actions/gitversion/execute@v1.1.1
+        uses: gittools/actions/gitversion/execute@v3.0.2
         
       - name: 'Change NPM version'
         uses: reedyuk/npm-version@1.2.2
