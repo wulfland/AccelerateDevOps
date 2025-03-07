@@ -38,6 +38,6 @@ In Chapter 3 - _Teamwork and Collaborative Development_ we learn how to collabo
 
    ![Commit to branch](img/commit-to-branch.png)
 
-   Navigate back to the pull request and note that you can review the file with all changes (`Files changed`) or individual `Commits`. You can comment in both views.
-
+   Navigate back to the pull request and note that you can review the file with all changes (`Files changed`) or individual `Commits`. You can comment in both.
+여기 테스트로 추가 했다1234348413518413
    ![Changes](img/changes.png)
