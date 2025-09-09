@@ -10,6 +10,7 @@ using SixLabors.ImageSharp.Advanced;
 using SixLabors.ImageSharp.Processing;
 using SixLabors.Primitives;
 
+
 namespace Tailwind.Traders.Web.Standalone.Services
 {
     public class OnnxImageSearchTermPredictor : IImageSearchTermPredictor
