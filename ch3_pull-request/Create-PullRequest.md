@@ -6,7 +6,7 @@ In Chapter 3 - _Teamwork and Collaborative Development_ we learn how to collabo
 
 2. Delete the following line:
 
-   __Delete this line__
+It was a simple tip of the hat. Grace didn't think that anyone else besides her had even noticed it. It wasn't anything that the average person would notice, let alone remember at the end of the day. That's why it seemed so unbelievable that this little gesture would ultimately change the course of the world.
 
 3. Add one or two lines here with a random text:
 
