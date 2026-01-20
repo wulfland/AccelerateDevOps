@@ -14,7 +14,7 @@ It was a simple tip of the hat. Grace didn't think that anyone else besides her 
 
 4. Modify the following line by removing the letters that do not belong:
 
-   __---> The ccow jumpedd ovverr thhe mooon__
+   __---> The cow jumped over the moon__
 
 5. Commit your changes into a new _branch_:
 
@@ -41,3 +41,5 @@ It was a simple tip of the hat. Grace didn't think that anyone else besides her 
    Navigate back to the pull request and note that you can review the file with all changes (`Files changed`) or individual `Commits`. You can comment in both views.
 
    ![Changes](img/changes.png)
+
+The shoes had been there for as long as anyone could remember. In fact, it was difficult for anyone to come up with a date they had first appeared. It had seemed they'd always been there and yet they seemed so out of place. Why nobody had removed them was a question that had been asked time and again, but while they all thought it, nobody had ever found the energy to actually do it. So, the shoes remained on the steps, out of place in one sense, but perfectly normal in another.
