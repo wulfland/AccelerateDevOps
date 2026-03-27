@@ -6,11 +6,10 @@ In Chapter 3 - _Teamwork and Collaborative Development_ we learn how to collabo
 
 2. Delete the following line:
 
-   __Delete this line__
 
 3. Add one or two lines here with a random text:
 
-   __...__
+ Being randome here, I don't know what else to do  __...__
 
 4. Modify the following line by removing the letters that do not belong:
 
