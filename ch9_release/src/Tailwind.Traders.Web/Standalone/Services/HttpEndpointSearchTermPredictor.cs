@@ -11,7 +11,6 @@ using System.Runtime.Serialization;
 using Microsoft.Extensions.Logging;
 using Azure.Storage.Blobs;
 using Azure.Storage.Blobs.Specialized;
-using SixLabors.Primitives;
 
 namespace Tailwind.Traders.Web.Standalone.Services
 {

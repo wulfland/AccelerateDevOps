@@ -7,8 +7,8 @@ using Microsoft.ML.OnnxRuntime;
 using Microsoft.ML.OnnxRuntime.Tensors;
 using SixLabors.ImageSharp;
 using SixLabors.ImageSharp.Advanced;
+using SixLabors.ImageSharp.PixelFormats;
 using SixLabors.ImageSharp.Processing;
-using SixLabors.Primitives;
 
 namespace Tailwind.Traders.Web.Standalone.Services
 {
@@ -37,7 +37,7 @@ namespace Tailwind.Traders.Web.Standalone.Services
         private DenseTensor<float> ConvertImageToTensor(Stream imageStream)
         {
             var data = new DenseTensor<float>(new[] { 1, 3, 224, 224 });
-            using (var image = Image.Load(imageStream))
+            using (var image = Image.Load<Rgba32>(imageStream))
             {
                 image.Mutate(ctx => ctx.Resize(new ResizeOptions
                 {
@@ -48,7 +48,7 @@ namespace Tailwind.Traders.Web.Standalone.Services
                 {
                     for (var y = 0; y < image.Height; y++)
                     {
-                        var color = image.GetPixelRowSpan(y)[x];
+                        var color = image.DangerousGetPixelRowMemory(y).Span[x];
                         data[0, 0, x, y] = color.B;
                         data[0, 1, x, y] = color.G;
                         data[0, 2, x, y] = color.R;
