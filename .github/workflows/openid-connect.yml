@@ -15,17 +15,17 @@ jobs:
     steps:
     
     - name: 'Checkout Github Action'
-      uses: actions/checkout@v4
+      uses: actions/checkout@v7
 
     - name: Set up .NET Core
-      uses: actions/setup-dotnet@v4
+      uses: actions/setup-dotnet@v6
       with:
         dotnet-version: '5.0.x'
 
     - name: Setup Node
-      uses: actions/setup-node@v4.0.3
+      uses: actions/setup-node@v4.1.0
       with:
-        node-version: 10.16.3    
+        node-version: 22.x
 
     - name: Install dependencies in client app
       working-directory: ch9_release/src/Tailwind.Traders.Web/ClientApp
@@ -38,7 +38,7 @@ jobs:
         dotnet publish -c Release -o publish
 
     - name: 'Az CLI login'
-      uses: azure/login@v2
+      uses: azure/login@v3
       with:
           client-id: ${{ secrets.AZURE_CLIENT_ID }}
           tenant-id: ${{ secrets.AZURE_TENANT_ID }}
